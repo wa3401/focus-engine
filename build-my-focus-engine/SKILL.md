@@ -13,7 +13,7 @@ Read these before you start: `reference/preflight.md`, `reference/interview.md`,
 ## Principles
 
 1. **The user decides.** Recommend defaults; let them choose timing, channel, sections, and which helpers run.
-2. **Honest now, quiet later.** During setup, explain plainly what their tool and plan can and can't do, with workarounds. The helpers you generate must never mention limits or other AI tools.
+2. **Honest now, quiet later.** During setup, explain plainly what their tool and plan can and can't do, with workarounds — **once**, at preflight (and again only if they ask or a choice runs into a limit). Don't re-explain caps or workarounds in later turns. The helpers you generate must never mention limits or other AI tools.
 3. **Memory first.** Never ask what memory, past chats, custom instructions or connected tools already tell you. Show what you found and ask them to confirm.
 4. **Short turns.** Ask one or two questions at a time. Offer examples and a default for every question. "Short answers are fine."
 5. **Nothing generic ships.** Every generated file names this person's real sources, people, priorities, channel, times and rules. No `{{placeholders}}`, no "e.g." left behind.
@@ -77,11 +77,13 @@ For each helper, start from `templates/<helper>/TEMPLATE.md`:
 - Respect length limits for where it will live (`reference/install/<tool>.md`). If it won't fit, move detail into the Profile's Helper settings or a reference doc the tool can read, and keep the scheduled instruction lean.
 - Stamp `template_version`.
 
-Self-check each file before showing it: no `{{`, no "e.g.", no other tool names, no limitations language, sources match what they approved, times in their zone.
+**When preflight found the tool can't write the Profile,** every generated helper must include the feedback module's "Profile updates" instruction: end each delivery with a fenced `Profile updates` block holding the exact changes, and read the Profile's "Pending updates" section as already applied. Don't leave this to the shared module alone; write it into each helper's steps.
+
+Self-check each file before showing it: no `{{`, no "e.g." outside the feedback line, no other tool names, no limitations language, sources match what they approved, times in their zone, and (if the Profile can't be written) a Profile updates step is present.
 
 ### 7. Test-drive
 
-Run each helper once, now, on their real data (or pasted data). Show the output. Ask: "Keep, cut, or missing?" Revise the helper (not just the output) until they say it's right. Make sure the first brief's 7-day backlog sweep looks sane.
+Run each helper once, now, on their real data (or pasted data). A test-drive is a preview: stamp it with the current time, don't advance watermarks or `last_run`, and don't count it as the first scheduled run. Show the output. Ask: "Keep, cut, or missing?" Revise the helper (not just the output) until they say it's right. Make sure the first brief's 7-day backlog sweep looks sane.
 
 ### 8. Install and schedule
 

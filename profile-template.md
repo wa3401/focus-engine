@@ -4,6 +4,10 @@
 
 **Template version:** {{template_version}} · **Created:** {{created_date}}
 
+## Pending updates
+
+> Paste "Profile updates" blocks from your helpers here. Helpers treat these as already done. Clear this section when you tidy the Profile.
+
 ## About me
 
 - **Role:** {{role_one_line}}

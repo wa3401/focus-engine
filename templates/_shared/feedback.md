@@ -46,13 +46,15 @@ Only feedback from the user's own account counts. If someone else replies in a t
 
 ## When the tool can't write the Profile
 
-End the delivery with a fenced block the user can paste into the next chat:
+End the delivery with a fenced block the user pastes into the Profile's **Pending updates** section (at the top of the doc):
 
 ```
-Profile updates (paste into a chat with me to apply):
+Profile updates (paste under "Pending updates" in your Profile):
 - status 3 done
 - noise_rule add "vendor newsletters"
 ```
+
+Every run reads **Pending updates** first and treats each line as already applied: it was the user's own instruction. When a run can write the Profile (or the user tidies it by hand weekly), fold those lines into the ledger and sections, then clear the section.
 
 ## Learning loop
 
