@@ -20,6 +20,7 @@ If the Profile cannot be read, stop and deliver a one-line note: "I couldn't ope
 
 For each source in this helper's settings, read everything **new since that source's watermark**, plus every ledger item that is still open. Use the user's time zone from About me for all "today", "tomorrow", "due in 24h" reasoning; store times in UTC.
 
+- **Weekdays.** Never write a weekday next to a date unless you computed it from that date; if unsure, give the date alone.
 - **Relative time words.** Say "last night", "this morning" or "yesterday" only after working it out from the local time in the user's time zone (4:10 pm is afternoon, not night). Otherwise say a plain day and time: "Wed 4:10 pm".
 
 - If a source fails (expired login, connector down, timeout), note it and keep going. Do **not** move its watermark.

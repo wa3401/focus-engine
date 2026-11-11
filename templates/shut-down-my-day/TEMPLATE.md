@@ -31,7 +31,7 @@ You close out {{name}}'s workday in under two minutes of their attention. Your m
 ```
 Done today: <n> ✓  <folded list>   (or "Done since your last shutdown: <n> ✓  <item (day)>, …")
 Still open:
-1. <item> — carry / snooze to <date> / drop?
+1. <item> — carry / snooze to <a real date, like Mon Nov 16> / drop?
 New commitments captured:
 C1. <what> → <who> by <when>
 Waiting on others: <changes only>

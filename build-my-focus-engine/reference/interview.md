@@ -16,7 +16,7 @@ Look through what you already have: saved memory, custom instructions, recent pa
 ## Ask only what's missing (one or two at a time)
 
 1. **Role, in one line.** "How would you describe your job to a new colleague?"
-2. **This quarter.** "What does a great next three months look like?" → turn into 3–5 ranked priorities with a one-line why each. Confirm the ranking.
+2. **This quarter.** "What does a great next three months look like?" → turn into 3–5 ranked priorities with a one-line why each. Confirm the ranking. Keep deadlines as the user gave them; add a weekday only after computing it from the date, never by guess.
 3. **People.** "Whose messages should always reach you? Who are you usually waiting on?" → VIPs, reports, clients, waiting-ons.
 4. **Noise.** "What do you never want to see in a brief?" (newsletters, certain channels, automated alerts, FYI from certain tools).
 5. **Hours.** Working days and hours, time zone (IANA, e.g. America/New_York), quiet hours, travel patterns.

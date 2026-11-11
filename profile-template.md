@@ -1,6 +1,6 @@
 # Assistant Profile — {{name}}
 
-> Your AI helpers read this before every run and update the bottom part after. Edit the top part any time; your edits win. Keep this doc private (only you, and the AI tool you connected).
+> Your AI helpers read this before every run and update the bottom part after. Edit the top part any time; your edits win. Keep this doc private: only you, and the AI tool you use with it.
 
 **Template version:** {{template_version}} · **Created:** {{created_date}}
 
