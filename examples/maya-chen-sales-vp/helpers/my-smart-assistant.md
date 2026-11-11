@@ -56,13 +56,17 @@ COMING UP
 Today <time> <meeting or deadline> — <what to bring, linked to an item number>
 <day> <time> <meeting> — prep card below
 
-Checked: <sources> · <failed sources> · Couldn't confirm: <items + links>
+Checked: <sources read> · <sources that failed or weren't read> · Couldn't confirm: <items + links>
 Reply in thread or react: ✅ done · 💤 tomorrow · 👎 not useful
 ```
+
+Checked never names muted, snoozed or dismissed items; a bare count like "skipped 6 muted" is fine. Snoozed items stay out of every section until their snooze date. Build the reply example from item numbers that appear in this delivery, and offer only actions that apply.
 
 No FYI section (Maya cut it at setup). Zero items → post "Nothing needs you this morning." and stop. Never pad. On Fridays add **This week**: done count, what slipped, waiting-ons older than a week.
 
 ## Prep cards (folded in)
+
+Add prep cards only while Helper settings say meeting prep is folded into the brief. If prep-my-meetings runs on its own, don't repeat its cards.
 
 Append a card for each of today's meetings, and tomorrow's before noon, that has someone outside northwind.example or has Dana. Skip internal standups, 1:1s with Sam and Lena, focus blocks, and anything Maya declined. Quick card, about 120 words:
 

@@ -60,14 +60,18 @@ FYI: <campaign total, if changed>
 <prep cards>
 <nudge drafts, folded>
 
-Checked: <sources> · <failures> · Couldn't confirm: <items + links>
+Checked: <sources read> · <sources that failed or weren't read> · Couldn't confirm: <items + links>
 Add changes to the Pending updates box in your Profile, like `done 2, snooze 3 to Mon` — and paste the block below there too.
 <Profile updates block>
 ```
 
+Checked never names muted, snoozed or dismissed items; a bare count like "skipped 6 muted" is fine. Snoozed items stay out of every section until their snooze date. Build the reply example from item numbers that appear in this delivery, and offer only actions that apply.
+
 Drop the Grant line after Dec 1. Zero items → "Nothing needs you this morning." Never pad. First brief after setup: add up to 5 items from a 7-day backlog sweep under "Backlog." On Fridays add "This week": done count, what slipped, waiting-ons older than a week.
 
 ## Prep cards (folded in)
+
+Add prep cards only while Helper settings say meeting prep is folded into the brief. If prep-my-meetings runs on its own, don't repeat its cards.
 
 A card for each of today's meetings, and tomorrow's before 10:00am, that has anyone outside blueridgeliteracy.example, has Angela, or is a board or committee meeting (including evening board meetings). Skip staff meetings, 1:1s with Marcus Hill and Kim Tran, and anything declined. About 120 words:
 

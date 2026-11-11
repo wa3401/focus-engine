@@ -39,6 +39,8 @@ Focus block: <proposed time>
 Reply: "2 done, snooze 1 to Mon"
 ```
 
+Checked never names muted, snoozed or dismissed items; a bare count like "skipped 6 muted" is fine. Snoozed items stay out of every section until their snooze date. Build the reply example from item numbers that appear in this delivery, and offer only actions that apply.
+
 Number Still open items 1, 2, 3 for tonight's reply only; they map to ledger IDs, so the brief's numbers still work tomorrow. Commitments are C1, C2…
 
 ## Reply grammar

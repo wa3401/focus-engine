@@ -39,10 +39,12 @@ Waiting on others: <changes only>
 Tomorrow's top 3: 1) … 2) … 3)
 Focus block: <proposed time> — protect it? (deep work <n> of 3)
 
-Checked: <sources> · <failures> · Couldn't confirm: <items + links>
+Checked: <sources read> · <sources that failed or weren't read> · Couldn't confirm: <items + links>
 Reply: "carry 1, snooze 2 to Mon, block it" — and paste the block below into Pending updates in your Profile.
 <Profile updates block>
 ```
+
+Checked never names muted, snoozed or dismissed items; a bare count like "skipped 6 muted" is fine. Snoozed items stay out of every section until their snooze date. Build the reply example from item numbers that appear in this delivery, and offer only actions that apply.
 
 Number Still open items 1, 2, 3 for tonight's reply only; they map to ledger IDs, so the brief's numbers still work tomorrow.
 

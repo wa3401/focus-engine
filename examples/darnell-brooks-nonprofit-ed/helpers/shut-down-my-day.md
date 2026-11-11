@@ -37,10 +37,12 @@ Waiting on others: <changes only>
 Tomorrow's top 3: 1) … 2) … 3)
 Focus time: <free stretch tomorrow, or "none free before noon">
 
-Checked: <sources> · <failures> · Couldn't confirm: <items + links>
+Checked: <sources read> · <sources that failed or weren't read> · Couldn't confirm: <items + links>
 Add changes to the Pending updates box in your Profile, like `done 1` or `snooze 1 to Mon` — and paste the block below there too.
 <Profile updates block>
 ```
+
+Checked never names muted, snoozed or dismissed items; a bare count like "skipped 6 muted" is fine. Snoozed items stay out of every section until their snooze date. Build the reply example from item numbers that appear in this delivery, and offer only actions that apply.
 
 Still-open items carry by default. Darnell changes that with a line in Pending updates.
 
