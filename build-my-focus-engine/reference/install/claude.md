@@ -1,25 +1,29 @@
 # Installing on Claude
 
+Source: `research/platform-facts-2026-11-11.md` (official Claude help pages, read 2026-11-11).
+
 ## Where helpers live
 
-- **Scheduled tasks (Cowork)** — preferred. Each run is its own session with the same connectors, skills and plugins as a normal task, and runs in the cloud while the computer sleeps; tasks needing local files still need the machine. Cadences: hourly, daily, weekly, weekdays, or manual. Create by describing the task in chat or via the scheduled tasks settings. **[verified 2026-11]** (support.claude.com/en/articles/13854387)
-- **Skills** — optional, for on-demand use ("prep my 2pm"). Installed by uploading a ZIP whose root contains `SKILL.md`, under Customize → Skills. **[verified 2026-11]** (support.claude.com/en/articles/12512180)
+- **Scheduled tasks** — preferred. Available on all paid plans: Pro, Max, Ultra, Team, Enterprise; not on Free. **[verified 2026-11]** Create from the **Scheduled** sidebar (Create with Claude / Set up manually) or by describing the task in any chat. Cadences: hourly, daily, weekly, weekdays, or manual. **[verified 2026-11]** Tasks run remotely, so they keep running while the computer is asleep or the app is closed — unless the task needs local files or apps. **[verified 2026-11]** Each run has the same connected tools, skills and plugins as a normal task. **[verified 2026-11]** No per-plan run cap is published; runs count toward normal usage.
+- **Skills** — optional, for on-demand use ("prep my 2pm"). Available on Free, Pro, Max, Ultra, Team and Enterprise (code execution must be on). **[verified 2026-11]** Install: Customize → Skills → **+** → **+ Create skill** → **Upload a skill**, then upload a ZIP **containing the skill folder** — the folder's name matches the skill name and it holds `SKILL.md`. **[verified 2026-11]**
 - **Projects** — optional home for on-demand helpers with the Profile attached.
 
-## Plans
+## Team and Enterprise admin settings (check in preflight)
 
-- Free: no scheduled tasks. Use `manual.md`. **[verified 2026-11]**
-- Pro / Max: scheduled tasks available. **[verified 2026-11]**
-- Team / Enterprise: owners can restrict cloud runs, connectors and user-created skills; write-capable connector actions may need approval per task unless the admin allows them. **[verified 2026-11]** → run preflight carefully; generate the admin note if blocked.
+All **[verified 2026-11]**:
+
+- Cowork can be turned off for the organization (off by default in HIPAA orgs).
+- **Cloud runs** ("Run Cowork in the cloud"): on by default for Team, **off by default for Enterprise** (and needs a custom-role grant). If off, scheduled tasks won't run while the laptop is closed → generate the admin note, or use manual runs.
+- **Write actions:** "Allow 'Always allow' for connector tools" is off by default, so write-capable connector tools (writing the Profile doc, sending a Slack DM) need approval once per task → prefer in-app delivery and the "Profile updates" block unless the admin enables it.
+- **User-created skills** can be turned off; on Enterprise the custom role needs "Create skills".
 
 ## Lowest-effort path
 
-1. Create one scheduled task per helper (or a merged task if the user prefers fewer), with the **full generated helper instruction** as the task prompt — shared modules inlined. Nothing else to install.
+1. One scheduled task per helper (or merged, if the user prefers fewer), with the **full generated helper instruction** as the task prompt — shared modules inlined. Nothing else to install.
 2. Point it at the Profile doc via the user's Drive/Notion/OneDrive connector.
-3. Delivery: in-app by default; Slack DM or email if those connectors can send to the user unattended (preflight confirms).
-4. Sub-agents: generally available in Cowork sessions — preflight confirms; use the sub-agent verification method when it does.
+3. Delivery: in-app by default; Slack DM or email if those connectors can send to the user without per-run approval (preflight confirms).
+4. Sub-agents: not documented for scheduled tasks — test in preflight; if unavailable, use the separate re-check pass.
 
-## Limits to fit
+## Free plan
 
-- Count runs per day across helpers; if the user's plan or admin limits are tight, fold meeting prep into the brief and keep the audit on demand.
-- Keep each task prompt focused; long reference material can live in the Profile's Helper settings or a reference doc the task reads.
+No scheduled tasks. Skills work, so offer the skill ZIP for on-demand use, plus `manual.md` reminders.

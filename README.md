@@ -27,7 +27,9 @@ Every run collects your feedback, reads your Profile, gathers what's new, and **
 2. Paste or attach it in a new chat with your AI assistant — Claude, ChatGPT, Gemini or Microsoft 365 Copilot.
 3. Say **"build my focus engine"** and answer its questions. Most people finish in 20–30 minutes.
 
-Prefer a Claude Skill? Download `build-my-focus-engine.zip` from [Releases](../../releases) and upload it under Customize → Skills.
+Prefer a Claude Skill? Download `build-my-focus-engine.zip` from [Releases](../../releases) and upload it under Customize → Skills → + → Create skill → Upload a skill.
+
+Platform facts behind the install guides are checked against official vendor docs; see [`research/`](research/).
 
 ## Your data
 

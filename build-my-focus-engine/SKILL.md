@@ -85,7 +85,7 @@ Run each helper once, now, on their real data (or pasted data). Show the output.
 
 ### 8. Install and schedule
 
-Follow `reference/install/<tool>.md`. Prefer the lowest-effort path that works: usually the full helper instruction inside a scheduled task — nothing else to install. Offer a skill/GPT/Gem/agent only if it adds real value (e.g. on-demand "prep my 2pm"), with click-by-click steps. If the tool can't schedule, give them a saved prompt plus a calendar reminder and say so plainly.
+Follow `reference/install/<tool>.md`. Prefer the lowest-effort path that works: usually the full helper instruction inside a scheduled task — nothing else to install. Offer a skill, project or agent only if it adds real value (never custom GPTs or Gems, which are being retired) (e.g. on-demand "prep my 2pm"), with click-by-click steps. If the tool can't schedule, give them a saved prompt plus a calendar reminder and say so plainly.
 
 Confirm each schedule exists (list them back with times in their zone).
 
