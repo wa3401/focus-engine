@@ -20,7 +20,7 @@ evals/
     user_script.md          (optional) the simulated user's answers for interactive cases
 ```
 
-Use only the source files a case needs. Fake data only — fake people, fake companies, `example.com`/`example.org` domains, and no real phone numbers.
+Use only the source files a case needs, but give every connector the case's capabilities or Profile list a file. A connector with nothing new gets an empty file (`{"threads": []}`, `{"tz": "…", "events": []}`, `{"channels": [], "messages": []}`, `{"deals": [], "tasks": []}`, `{"files": []}`), so the run reads "nothing new" instead of "failed". Leave a file out, or make it an error, only when the failure is the point of the case. Outlook uses the `gmail.json` shape, Outlook Calendar `gcal.json`, Teams `slack.json`, and OneDrive `drive.json`. Fake data only — fake people, fake companies, `example.com`/`example.org` domains, and no real phone numbers.
 
 ## Source file shapes
 
@@ -52,7 +52,12 @@ All times ISO 8601 UTC (`Z`). IDs are stable strings; the Profile ledger refers 
 
 // crm.json
 { "deals": [{"id": "deal/991", "name": "…", "owner": "Maya Chen", "stage": "Proposal", "amount": 48000,
-             "next_step": "…", "next_step_due": "2026-11-14", "contacts": ["…"]}] }
+             "next_step": "…", "next_step_due": "2026-11-14", "contacts": ["…"]}],
+  "tasks": [] }
+
+// drive.json  (documents)
+{ "files": [{"id": "1PartnerBriefExample", "name": "…", "link": "https://docs.google.com/document/d/1PartnerBriefExample",
+             "modified": "2026-11-09T20:00:00Z", "comments": []}] }
 
 // chats.json  (past AI conversations, for the audit and memory-first setup)
 { "memory": ["…saved memory lines…"],

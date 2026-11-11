@@ -7,7 +7,7 @@
       "tests": "Relevance",
       "prompt": "It's the scheduled weekday run. Produce today's brief.",
       "files": ["evals/fixtures/msa-01-maya-priorities/"],
-      "expected_output": "A Slack-DM brief for Thu Nov 12 that ranks the Acme redlines and Dana's request above Sam's small discount, puts Tom's seat count under Waiting on others, preps the Globex QBR and leadership sync but not the 1:1, and shows no noise.",
+      "expected_output": "An in-app chat brief for Thu Nov 12 that ranks the Acme redlines and Dana's request above Sam's small discount, puts Tom's seat count under Waiting on others, preps the Globex QBR and leadership sync but not the 1:1, and shows no noise.",
       "expectations": [
         "Needs you includes Priya Shah's Acme section 7 redlines (gmail:19a0c1d2) with the Friday noon deadline, ranked above Sam's Initech discount request (slack:C_DEALS/1794424500.000100) if that request appears at all",
         "Needs you includes Dana Whitfield's request for the Q4 commit number (slack:D_DANA/1794436800.000100), tied to the 11:00 leadership sync",

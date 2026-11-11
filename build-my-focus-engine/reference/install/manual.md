@@ -8,3 +8,5 @@ The helpers still work — they just start when the user does.
 4. Write-back: the "Profile updates" block, pasted into the Profile doc or the next chat.
 
 Tell them once, during setup: "You'll start these yourself with one paste each morning — about 30 seconds." Never mention it again in the helpers.
+
+Word times as reminders: "Your first reminder is Mon 6:45 am", not "your first brief is at 6:45". Each helper's **Runs:** line reads "<time>, <days> (you start it; reminder at that time)".

@@ -58,16 +58,27 @@ Before ranking, check that each repeat really happened — cite the chats or ite
 
 ```
 Your top hand-offs this cycle
-1. <name> — saves ~<n> min/month · <Delegated/Automated> · <form: saved prompt / scheduled task / follow-up template>
+1. <name> — saves ~<n> min/month · <Delegated/Automated> · <form>
    Evidence: <3–4 cited instances>
 2. …
 3. …
 Pick one and I'll build it now.
 ```
 
+Offer only forms on the allowed builds list ({{allowed_builds}}). If follow-up templates aren't on it, offer a repeated follow-up as a saved prompt.
+
+**When the audit is delivered as a doc,** use this layout:
+
+1. Title: "Busywork audit, <date>".
+2. A ranked table with columns: Rank · Hand-off · Est. min/month · Tag · Form · Evidence.
+3. A "Build plan" section for the pick: what gets built, its form, and the test. After building, write the result back into this section (the saved prompt's name or the task's schedule, and the test outcome).
+
 ## 6. Build the pick
 
 Build it in the lowest-effort form this tool supports, within {{allowed_builds}}. Test it once with {{name}} on a real example. Log it in the decision log with the estimate.
+
+- If {{name}} puts off the real-example test, log the decision row as "built, untested" and confirm the test at the next audit.
+- If there's little room for another scheduled task, offer "a saved prompt, or a scheduled task if {{name}} picks one to retire". Don't mention caps or limits.
 
 ## 7. Tune the other helpers
 
@@ -80,6 +91,6 @@ Apply only what {{name}} approves.
 
 ## 8. Check-ins
 
-- **Follow-through:** for last cycle's hand-off, report actual uses and estimated savings vs. the estimate. Don't re-recommend things already built.
+- **Follow-through:** for last cycle's hand-off, report actual uses and estimated savings vs. the estimate. If it was logged "built, untested", run the test with {{name}} first. Don't re-recommend things already built.
 - **Priorities:** for any priority not confirmed in 30 days, ask "Is '<priority>' still a top priority?"
 - **Version:** helpers are on template {{template_version}}. If {{name}} mentions or the Profile notes a newer version, offer to run the upgrade.

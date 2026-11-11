@@ -50,7 +50,7 @@ Things never to show me:
 
 | Helper | On | When | Delivered to | Feedback by | Sections / options | Cap |
 | --- | --- | --- | --- | --- | --- | --- |
-| my-smart-assistant | on | weekdays 7:30 | Claude artifact | text box per item + anything-else box | Needs you, Waiting on others, Coming up, FYI; Friday roll-up on; urgent alerts off | 7 |
+| my-smart-assistant | on | weekdays 7:30 | Claude artifact | text box per Needs you item + anything-else box | Needs you, Waiting on others, Coming up, FYI; Friday roll-up on; urgent alerts off | 7 |
 | prep-my-meetings | on | in morning brief | same | same | external + Dana only; quick cards | 4 |
 | shut-down-my-day | on | weekdays 17:00 | Slack DM | one-line reply | interactive | — |
 | hand-off-my-busywork | on | every other Friday | chat | chat | may build: saved prompts, scheduled tasks | 3 |

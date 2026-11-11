@@ -1,0 +1,18 @@
+{
+  "files": [
+    {
+      "id": "1AcmeRenewalTermsExample",
+      "name": "Acme renewal terms",
+      "link": "https://docs.google.com/document/d/1AcmeRenewalTermsExample",
+      "modified": "2026-11-09T20:00:00Z",
+      "comments": []
+    },
+    {
+      "id": "1Q4ForecastSheetExample",
+      "name": "Q4 forecast",
+      "link": "https://docs.google.com/document/d/1Q4ForecastSheetExample",
+      "modified": "2026-11-09T20:00:00Z",
+      "comments": []
+    }
+  ]
+}

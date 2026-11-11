@@ -4,6 +4,10 @@
 
 **Template version:** 0.1.0 · **Created:** 2026-10-27
 
+## Pending updates
+
+> Paste "Profile updates" blocks from your helpers here. Every run treats these lines as already applied. A run that can write the Profile folds them in and clears this section.
+
 ## About me
 
 - **Role:** Solo brand consultant running Raman Studio (4–6 active clients)

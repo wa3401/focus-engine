@@ -89,7 +89,7 @@ audit: {cadence: every_other_friday_1000, delivery: chat, may_build: [saved_prom
 last_tidy: "2026-11-12T12:35:00Z"
 last_run:
   my-smart-assistant: "2026-11-12T12:30:00Z"
-  shut-down-my-day: "2026-11-06T22:05:00Z"
+  shut-down-my-day: "2026-11-11T22:00:00Z"
 watermarks:
   gcal: "2026-11-12T12:30:00Z"
   gmail: "2026-11-12T12:30:00Z"
