@@ -6,6 +6,7 @@
   "license": "MIT",
   "type": "module",
   "scripts": {
-    "build": "node scripts/build-prompt.mjs"
+    "build": "node scripts/build-prompt.mjs",
+    "evals:bundle": "node scripts/bundle-evals.mjs"
   }
 }

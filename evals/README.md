@@ -102,3 +102,24 @@ For each case and each of 3 runs:
 5. Repeat without the skill for the baseline.
 
 Other tools (ChatGPT, Gemini, Copilot): one hand-run setup each plus the 5 core cases marked `"smoke": true`. Results are labelled "hand-checked" in the README.
+
+## Running on ChatGPT, Gemini or Copilot
+
+These tools can't read a fixture folder, so pack each case into one paste-ready file:
+
+```bash
+npm run evals:bundle            # smoke cases
+npm run evals:bundle -- --all   # every case
+npm run evals:bundle -- msa-02  # by id prefix
+```
+
+That writes two files per case to `dist/evals/`:
+
+- `<id>.run.md`: open a **fresh chat** (memory off, or a temporary chat) and attach the file, or paste it if it fits. Send it. The reply is the run output.
+- `<id>.grade.md`: open a **separate** chat, attach or paste it, then paste the run output at the end. The grader returns PASS or FAIL per expectation and `RESULT: n/N`.
+
+Grade with a different chat than the one that ran the case. Grading on Claude is fine for runs from any platform. The pass bar is 3 runs out of 3, so repeat each run in a new chat.
+
+Record results in `evals/results/<platform>-<date>.md`: case id, plan, RESULT line, and the first failed expectation.
+
+Limits of this mode: no real connectors, no sub-agents, no scheduled trigger, and no real write-back. This tests the instructions, not the platform plumbing. Use `SMOKE-CHECKLIST.md` for that.
