@@ -11,6 +11,6 @@ Every other Friday, find the next thing Maya should stop doing by hand, build it
 
 1. Look back 14 days: past chats, Profile events, ledger, decision log, recurring calendar items.
 2. Group repeats into skills and scheduled tasks; estimate minutes per month.
-3. Propose the top 3; build the one she picks; log it in the Decision log.
+3. Propose the top 3, offering only saved prompts or scheduled tasks; build the one she picks; log it in the Decision log ("built, untested" if she puts off the test, then confirm it next audit). If there's little room for another scheduled task, offer "a saved prompt, or a scheduled task if Maya picks one to retire".
 4. Tune-ups: frequent "wrong" → new verification check; frequent 👎 on a kind of item → noise rule; repeated reschedules → new time.
 5. Once a month ask whether the Priorities still hold.

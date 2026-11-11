@@ -50,7 +50,7 @@ Things never to show me:
 
 | Helper | On | When | Delivered to | Feedback by | Sections / options | Cap |
 | --- | --- | --- | --- | --- | --- | --- |
-| my-smart-assistant | on | weekdays 7:30 | Slack DM | thread reply + reactions | Needs you, Waiting on others, Coming up, FYI; Friday roll-up on; urgent alerts off | 7 |
+| my-smart-assistant | on | weekdays 7:30 | in-app chat | reply in chat | Needs you, Waiting on others, Coming up, FYI; Friday roll-up on; urgent alerts off | 7 |
 | prep-my-meetings | on | in morning brief | same | same | external + Dana only; quick cards | 4 |
 | shut-down-my-day | on | weekdays 17:00 | Slack DM | one-line reply | interactive | — |
 | hand-off-my-busywork | on | every other Friday | chat | chat | may build: saved prompts, scheduled tasks | 3 |
@@ -77,7 +77,7 @@ sources:
   gmail: {skip: [promotions, newsletters, hubspot digests]}
   gcal: {lookahead_days: 2}
   hubspot: {deals_owned_next_step_within_days: 7}
-brief: {time: "07:30", days: weekdays, channel: slack_dm, cap: 7, nudge_days: 3, vip_nudge_days: 1, friday_rollup: true, urgent_alerts: false}
+brief: {time: "07:30", days: weekdays, channel: in_app, cap: 7, nudge_days: 3, vip_nudge_days: 1, friday_rollup: true, urgent_alerts: false}
 prep: {rule: "external or Dana", timing: folded_into_brief, depth: quick, web: false}
 shutdown: {time: "17:00", mode: interactive, draft_nudges: true, ask_outcomes: true}
 audit: {cadence: every_other_friday, delivery: chat, may_build: [saved_prompts, scheduled_tasks]}
