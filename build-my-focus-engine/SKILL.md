@@ -13,7 +13,7 @@ Read these before you start: `reference/preflight.md`, `reference/interview.md`,
 ## Principles
 
 1. **The user decides.** Recommend defaults; let them choose timing, channel, sections, and which helpers run.
-2. **Honest now, quiet later.** During setup, explain plainly what their tool and plan can and can't do, with workarounds — **once**, at preflight (and again only if they ask or a choice runs into a limit). Don't re-explain caps or workarounds in later turns. The helpers you generate must never mention limits or other AI tools.
+2. **Honest now, quiet later.** During setup, explain plainly what their tool and plan can and can't do, with workarounds — **once**, at preflight (and again only if they ask or a choice runs into a limit). Don't re-explain caps or workarounds in later turns, and don't restate what does or doesn't run automatically after preflight, not at install and not on the handover card. The helpers you generate must never mention limits or other AI tools.
 3. **Memory first.** Never ask what memory, past chats, custom instructions or connected tools already tell you. Show what you found and ask them to confirm.
 4. **Short turns.** Ask one or two questions at a time. Offer examples and a default for every question. "Short answers are fine."
 5. **Nothing generic ships.** Every generated file names this person's real sources, people, priorities, channel, times and rules. No `{{placeholders}}`, no "e.g." left behind.
@@ -25,7 +25,7 @@ Detect which the person wants:
 - **Setup** (default) — the full flow below.
 - **Upgrade** — they have a Profile with saved setup answers and want the newest templates: regenerate every helper from the new templates + saved answers + settings changed by feedback since, show a short diff per helper, install only after they approve.
 - **Change** — "add meeting prep", "move my brief to 8", "switch to email": update settings and regenerate just what's affected.
-- **Pause / resume** — vacation mode: pause every schedule (or tell them exactly which to pause), set `Vacation mode: on until <date>` in the Profile. On resume, the first brief runs a catch-up sweep with its own cap.
+- **Pause / resume** — vacation mode: pause every schedule (or tell them exactly which to pause), set `Vacation mode: on until <date>` in the Profile. With no scheduling, pause is "skip your reminders, or say 'vacation until <date>'". On resume, the first brief runs a catch-up sweep with its own cap.
 - **Remove** — walk them through the uninstall checklist on their handover card.
 
 ## Setup flow
@@ -67,7 +67,7 @@ Pick each helper's **feedback method** to match its channel (`templates/_shared/
 
 ### 5. Write the Profile
 
-Create the Assistant Profile from `profile-template.md` in their doc tool (Google Docs, Notion, OneDrive/Word — whichever they use and you can write), or as a local markdown file if nothing else works. Fill every field. Save their setup answers in the Setup answers section. Confirm the doc is private (only them). Create the archive doc next to it.
+Create the Assistant Profile from `profile-template.md` in their doc tool (Google Docs, Notion, OneDrive/Word — whichever they use and you can write), or as a local markdown file if nothing else works. Fill every field. Keep all four rows in Helper settings. A helper they didn't choose gets `On: off` with its §4 defaults filled in (time, channel, feedback method, sections, cap), so turning it on later is one step. Save their setup answers in the Setup answers section. Confirm the doc is private (only them). Create the archive doc next to it.
 
 ### 6. Generate each chosen helper
 
@@ -81,7 +81,7 @@ For each helper, start from `templates/<helper>/TEMPLATE.md`:
 
 **When preflight found the tool can't write the Profile,** every generated helper must include the feedback module's "Profile updates" instruction: end each delivery with a fenced `Profile updates` block holding the exact changes, and read the Profile's "Pending updates" section as already applied. Don't leave this to the shared module alone; write it into each helper's steps.
 
-Self-check each file before showing it: no `{{`, no "e.g." outside the feedback line, no other tool names, no limitations language, sources match what they approved, times in their zone, and (if the Profile can't be written) a Profile updates step is present.
+Self-check each file before showing it: no `{{`, no "e.g." outside the feedback line, no other tool names, no limitations language, sources match what they approved, times in their zone, and (if the Profile can't be written) a Profile updates step is present. The pasted-data line "Not checked: <sources not in the paste>" is allowed; it's not limits language.
 
 ### 7. Test-drive
 
@@ -89,7 +89,7 @@ Run each helper once, now, on their real data (or pasted data). A test-drive is 
 
 ### 8. Install and schedule
 
-Follow `reference/install/<tool>.md`. Prefer the lowest-effort path that works: usually the full helper instruction inside a scheduled task — nothing else to install. Offer a skill, project or agent only if it adds real value (never custom GPTs or Gems, which are being retired) (e.g. on-demand "prep my 2pm"), with click-by-click steps. If the tool can't schedule, give them a saved prompt plus a calendar reminder and say so plainly.
+Follow `reference/install/<tool>.md`. Prefer the lowest-effort path that works: usually the full helper instruction inside a scheduled task — nothing else to install. Offer a skill, project or agent only if it adds real value (never custom GPTs or Gems, which are being retired) (e.g. on-demand "prep my 2pm"), with click-by-click steps. If the tool can't schedule, give them a saved prompt plus a calendar reminder. Preflight already told them why; don't say it again.
 
 Confirm each schedule exists (list them back with times in their zone).
 
@@ -100,7 +100,7 @@ Give them a one-page card (in chat, and saved at the top of the Profile):
 - What runs when, and where it shows up.
 - How to give feedback (their channel's one-liner, with an example).
 - How to change things ("tell me: move my brief to 8").
-- Pause, upgrade, remove — what to say, and the uninstall checklist (every schedule, file, doc, and connector to remove).
+- Pause, upgrade, remove — what to say, and the uninstall checklist (every schedule, file, doc, and connector to remove). With no scheduling, pause is "skip your reminders, or say 'vacation until <date>'".
 - What "good" looks like after a week, and that `hand-off-my-busywork` will tune things.
 
 ## Upgrade details

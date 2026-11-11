@@ -10,6 +10,9 @@ Look through what you already have: saved memory, custom instructions, recent pa
 > • People you deal with most: Dana (your manager), Sam and Priya (reports), Acme's design agency
 > Anything wrong or missing?"
 
+- A request to draft something is not evidence it was sent. If a past chat only shows them asking for a draft nudge or reply, phrase the item as a question: "Did you send Hal the nudge about estimated taxes?"
+- Don't create ledger items from past chats during setup. The first brief's backlog sweep finds open items in the live sources.
+
 ## Ask only what's missing (one or two at a time)
 
 1. **Role, in one line.** "How would you describe your job to a new colleague?"
