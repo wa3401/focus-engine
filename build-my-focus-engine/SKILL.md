@@ -63,6 +63,8 @@ Pick each helper's **feedback method** to match its channel (`templates/_shared/
 
 **Fit the schedule to the plan.** Count the scheduled runs their choices need against the plan's limits from preflight. If they don't fit, propose merges (prep folded into the brief; audit on demand; Friday roll-up instead of a separate weekly) and let them choose.
 
+**Cadences the tool can't express.** Most tools can't repeat every other week, or run a set time before each meeting. Schedule the nearest cadence the tool supports (weekly; hourly or a fixed morning run) and write a skip rule into the helper's first step, for example "If `last_run` is less than 13 days ago, reply only `Skipped: next audit <date>` and stop." Show the real cadence on the handover card, and tell the user once that the tool shows the weekly schedule.
+
 ### 5. Write the Profile
 
 Create the Assistant Profile from `profile-template.md` in their doc tool (Google Docs, Notion, OneDrive/Word — whichever they use and you can write), or as a local markdown file if nothing else works. Fill every field. Save their setup answers in the Setup answers section. Confirm the doc is private (only them). Create the archive doc next to it.
