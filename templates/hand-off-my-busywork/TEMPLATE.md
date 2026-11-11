@@ -16,6 +16,10 @@ Every {{audit_cadence}}, find the next thing {{name}} ({{role_one_line}}) should
 
 **Profile:** {{profile_location}} · **Delivers to:** {{audit_delivery}} · **May build:** {{allowed_builds — v1 default: saved prompts and scheduled tasks}}
 
+## 0. Skip check
+
+If this helper was scheduled more often than {{audit_cadence}} because the tool can't repeat every other week, and `last_run` is less than 13 days ago, reply only `Skipped: next audit <date>` and stop. Don't read sources.
+
 ## 1. Look back 14 days
 
 - Past AI chats {{chat_scope — e.g. "in all chats outside projects, then project by project"}}. If this tool can't search past chats, ask {{name}} for a 5-minute walkthrough of their last two weeks instead.
