@@ -44,7 +44,7 @@ Build the example in the line from this delivery. Use item numbers that actually
 
 ## Saving artifact feedback
 
-The page saves feedback only through storage the tool actually provides: persisted artifact storage, or a write to the Profile. Check that the storage exists before showing the form as savable. If none is available, the page shows "Copy your feedback and paste it in chat" with a copy button. Show "Saved" only after the save succeeded; if it fails, say so and offer the copy option.
+The page saves feedback only through storage the tool actually provides: persisted artifact storage, or a write to the Profile. It counts as saved only when the write returns without an error and confirms the data was stored; a call that returns nothing is not a save. Check that the storage exists before showing the form as savable. If none is available, the page shows "Copy your feedback and paste it in chat" with a copy button. Show "Saved" only after the save succeeded; if it fails, say so and offer the copy option.
 
 ## Owner-only
 

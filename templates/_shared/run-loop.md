@@ -46,7 +46,7 @@ Keep an item only if it is:
 - **Accurate** — passed verification.
 - **Not muted** — doesn't match a noise rule and isn't dismissed or snoozed. A snoozed item stays out of every section, Coming up included, until its snooze date.
 
-Then enforce this helper's item cap, most urgent first. Anything cut stays in the ledger as open; it can surface on a later run when it becomes more pressing.
+Then enforce this helper's item cap, most urgent first. Most urgent means: anything due today or within 24 hours goes first; priority breaks ties and orders the rest. Anything cut stays in the ledger as open; it can surface on a later run when it becomes more pressing.
 
 When you can, do this pass with a second fresh context (see `verification.md`) so the drafter is not grading its own work.
 

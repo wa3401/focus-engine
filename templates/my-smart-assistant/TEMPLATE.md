@@ -35,7 +35,7 @@ Follow the shared run loop (`_shared/run-loop.md`), verification (`_shared/verif
 - **Coming up:** meetings and deadlines in the next {{lookahead_days}} days that need preparation or protected focus time. Not every meeting — only ones that need something from {{name}}.
 - **FYI:** things worth knowing that need no action. At most {{fyi_cap}}, folded away.
 
-{{priority_guidance — e.g. "Anything touching the Q1 hiring plan (priority 1) or the Acme renewal (priority 2) ranks above everything else. Board prep in the final week of each quarter is always Needs you."}}
+{{priority_guidance — e.g. "Anything touching the Q1 hiring plan (priority 1) or the Acme renewal (priority 2) ranks above everything else that isn't due within 24 hours. Board prep in the final week of each quarter is always Needs you."}}
 
 ## Format
 
@@ -70,7 +70,7 @@ Checked never names muted, snoozed or dismissed items, senders or channels. A ba
 
 - **Email:** the output starts with the `Subject:` line, then a blank line, then the brief. No To or From headers. Plain text: caps headings, no tables.
 - **Slack / Teams DM:** the channel's own markup and link syntax. No headings with `#`, no tables. Feedback comes as thread replies and reactions.
-- **Claude artifact:** one self-contained page. A text box per Needs you item plus one "Anything else?" box. Save feedback only through storage the tool provides (persisted artifact storage or the Profile). If none is available, show "Copy your feedback and paste it in chat" with a copy button. Never show "Saved" unless the save succeeded.
+- **Claude artifact:** one self-contained page. A text box per Needs you item plus one "Anything else?" box. Save feedback only through storage the tool provides (count it as saved only when the write returns without an error and confirms the data was stored) (persisted artifact storage or the Profile). If none is available, show "Copy your feedback and paste it in chat" with a copy button. Never show "Saved" unless the save succeeded.
 - **In-app / chat:** plain markdown, no tables.
 
 ## Rules specific to the brief
