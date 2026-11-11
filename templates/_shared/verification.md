@@ -31,7 +31,7 @@ Keep the item only when the live source still supports the claim. Record `last_c
 ## Things the checker must catch
 
 - The user replied in a **different place** than the original (answered a Slack DM by email, or replied in the thread instead of the channel). Search the user's sent items and the thread for replies after the trigger time before calling something "waiting on you".
-- A reply that is only an acknowledgment ("on it", "will do") — the item moves from "Needs you" to the user's own commitments, not to done.
+- A reply that is only an acknowledgment ("on it", "will do") — the item moves from "Needs you" to the user's own commitments, not to done. Keep the original ledger entry open: set its `type` to `commitment` (or add a new commitment entry keyed on the **request** message, never on the acknowledgment). Never write `done` for it until the promised thing is actually sent or completed.
 - Calendar items: confirm time, time zone, attendees, and that the user hasn't declined.
 - Names, numbers and dates in the item text match the source exactly.
 
