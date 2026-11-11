@@ -1,0 +1,14 @@
+name: Idea or request
+description: Something you'd like focus-engine to do
+labels: [idea]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would help, and why
+    validations: { required: true }
+  - type: dropdown
+    id: tool
+    attributes:
+      label: AI tool you use
+      options: [Claude, ChatGPT, Gemini, Microsoft 365 Copilot, Other]

@@ -1,0 +1,11 @@
+{
+  "name": "focus-engine",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Fewer prompts, more focus: an AI setup skill that builds a morning brief, meeting prep, end-of-day shutdown and busywork audit tailored to you.",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build-prompt.mjs"
+  }
+}
