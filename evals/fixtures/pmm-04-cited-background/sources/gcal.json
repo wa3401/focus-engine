@@ -1,0 +1,37 @@
+{
+  "tz": "America/New_York",
+  "events": [
+    {
+      "id": "evt_hollis_pitch",
+      "title": "Partner program pitch — Hollis Group",
+      "start": "2026-11-11T20:00:00Z",
+      "end": "2026-11-11T20:45:00Z",
+      "attendees": [
+        {
+          "email": "maya@northwind.example",
+          "name": "Maya Chen",
+          "response": "accepted"
+        },
+        {
+          "email": "erin.vasquez@hollis.example",
+          "name": "Erin Vasquez",
+          "response": "accepted"
+        },
+        {
+          "email": "marco.diaz@hollis.example",
+          "name": "Marco Diaz",
+          "response": "accepted"
+        },
+        {
+          "email": "raj@northwind.example",
+          "name": "Raj Mehta",
+          "response": "accepted"
+        }
+      ],
+      "organizer": "maya@northwind.example",
+      "description": "Intro to the Northwind partner program (launching Q1). Deck: https://docs.google.com/document/d/1PartnerDeckExample",
+      "status": "confirmed",
+      "recurring": false
+    }
+  ]
+}

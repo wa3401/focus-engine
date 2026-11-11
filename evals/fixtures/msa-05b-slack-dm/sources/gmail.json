@@ -1,0 +1,30 @@
+{
+  "user": "maya@northwind.example",
+  "threads": [
+    {"id": "19a0c1d2", "subject": "Acme renewal — redlines on MSA section 7", "labels": ["INBOX", "IMPORTANT"],
+     "messages": [
+       {"from": "priya.shah@acme.example", "to": ["maya@northwind.example"], "at": "2026-11-11T20:45:00Z",
+        "body": "Hi Maya, our legal team sent redlines on section 7 (liability cap). We need your sign-off or a counter by Friday noon to keep the Dec 1 start date. Attached. Thanks, Priya"}
+     ]},
+    {"id": "19a0c3e4", "subject": "AE candidates — shortlist for interviews", "labels": ["INBOX"],
+     "messages": [
+       {"from": "jordan.lee@talentbridge.example", "to": ["maya@northwind.example"], "at": "2026-11-11T23:30:00Z",
+        "body": "Hi Maya, three AE candidates are ready for first-round interviews. Could you send me 2-3 slots for next week by end of day Thursday? Profiles attached. Jordan"}
+     ]},
+    {"id": "19a0c5f6", "subject": "Globex — seat count for expansion quote", "labels": ["SENT"],
+     "messages": [
+       {"from": "maya@northwind.example", "to": ["tom.becker@globex.example"], "at": "2026-11-06T16:20:00Z",
+        "body": "Hi Tom, could you confirm the final seat count so I can send the expansion quote? Thanks, Maya"}
+     ]},
+    {"id": "19a0c7a8", "subject": "The Revenue Weekly: 9 pipeline hacks for Q4", "labels": ["INBOX", "CATEGORY_PROMOTIONS"],
+     "messages": [
+       {"from": "news@revenueweekly.example", "to": ["maya@northwind.example"], "at": "2026-11-12T10:00:00Z",
+        "body": "This week: 9 pipeline hacks top sellers use in Q4. Read more. Unsubscribe."}
+     ]},
+    {"id": "19a0c9b0", "subject": "Your HubSpot weekly digest", "labels": ["INBOX", "CATEGORY_UPDATES"],
+     "messages": [
+       {"from": "noreply@hubspot.example", "to": ["maya@northwind.example"], "at": "2026-11-12T09:00:00Z",
+        "body": "Your team logged 42 activities this week. 3 deals changed stage. View dashboard."}
+     ]}
+  ]
+}

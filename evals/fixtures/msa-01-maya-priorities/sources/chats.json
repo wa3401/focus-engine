@@ -1,0 +1,11 @@
+{
+  "memory": [
+    "Maya Chen is VP of Sales at Northwind Analytics (northwind.example).",
+    "Maya's top goal this quarter is closing the Acme renewal and the Globex expansion by Dec 15.",
+    "Maya is hiring two AEs through Jordan Lee at TalentBridge.",
+    "Maya prefers short bullet answers and hates long preambles."
+  ],
+  "chats": [
+    {"id": "chat_0412", "at": "2026-11-09T14:05:00Z", "title": "Acme liability cap options", "user_turns": ["What are typical liability cap counters for a $120k SaaS renewal?"]}
+  ]
+}

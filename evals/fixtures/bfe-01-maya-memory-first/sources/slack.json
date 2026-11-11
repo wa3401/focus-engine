@@ -1,0 +1,7 @@
+{
+  "user": {"id": "U_MAYA", "name": "Maya Chen"},
+  "channels": [{"id": "C_DEALS", "name": "deals"}, {"id": "C_LEAD", "name": "leadership"}, {"id": "C_HIRING", "name": "hiring"}, {"id": "C_RANDOM", "name": "random"}, {"id": "C_SOCIAL", "name": "social"}],
+  "messages": [
+    {"id": "C_DEALS/1793970000.000100", "channel": "C_DEALS", "ts": "2026-11-02T14:20:00Z", "from": "U_SAM", "from_name": "Sam Ortiz", "text": "Initech call moved to Thursday.", "thread_of": null, "reactions": []}
+  ]
+}

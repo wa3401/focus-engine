@@ -1,0 +1,56 @@
+{
+  "user": "maya@northwind.example",
+  "threads": [
+    {
+      "id": "18f2c0aa",
+      "subject": "Renewal signature call",
+      "labels": [
+        "INBOX",
+        "SENT"
+      ],
+      "messages": [
+        {
+          "from": "priya.shah@acme.example",
+          "to": [
+            "maya@northwind.example"
+          ],
+          "at": "2026-11-09T14:20:00Z",
+          "body": "Could you send a few times for a signature call next week?"
+        },
+        {
+          "from": "maya@northwind.example",
+          "to": [
+            "priya.shah@acme.example"
+          ],
+          "at": "2026-11-10T15:30:00Z",
+          "body": "Tue 11/17 at 10 or 2, or Wed 11/18 at 11 — any of those work?"
+        }
+      ]
+    },
+    {
+      "id": "18f2a9b3",
+      "subject": "AE candidate shortlist",
+      "labels": [
+        "INBOX"
+      ],
+      "messages": [
+        {
+          "from": "maya@northwind.example",
+          "to": [
+            "jordan.lee@talentbridge.example"
+          ],
+          "at": "2026-11-05T16:00:00Z",
+          "body": "Could you send the shortlist by Tuesday?"
+        },
+        {
+          "from": "jordan.lee@talentbridge.example",
+          "to": [
+            "maya@northwind.example"
+          ],
+          "at": "2026-11-12T15:00:00Z",
+          "body": "Shortlist attached — five candidates, three strong."
+        }
+      ]
+    }
+  ]
+}

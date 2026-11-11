@@ -1,0 +1,130 @@
+{
+  "skill_name": "build-my-focus-engine",
+  "evals": [
+    {
+      "id": "bfe-01-maya-memory-first",
+      "name": "Memory-first setup on Claude Max with full connectors",
+      "tests": "Interview + generation",
+      "prompt": "build my focus engine",
+      "files": [
+        "evals/fixtures/bfe-01-maya-memory-first/"
+      ],
+      "expected_output": "Setup shows a pre-fill of Maya's role, priorities, people, noise and hours drawn from memory and past chats, asks only what's missing, then writes a Profile and four helper files and lists three scheduled tasks (brief with folded prep, shutdown, audit).",
+      "expectations": [
+        "Before asking anything about role, priorities or people, setup shows a pre-fill that includes VP of Sales at Northwind, the Acme renewal and Globex expansion by Dec 15, hiring two AEs, the partner program, Dana Whitfield, and Priya Shah",
+        "Setup never asks Maya for her role, her priorities, or her time zone as open questions (it only asks her to confirm or correct the pre-fill)",
+        "Up to the end of helper configuration, setup asks Maya at most 8 questions in total (the pre-fill confirmation counts as one)",
+        "Setup produces a Profile with every section of profile-template.md filled (About me with Capabilities, Priorities, People, Noise rules, Helper settings, Setup answers, Data) and four helper files: my-smart-assistant, prep-my-meetings, shut-down-my-day, hand-off-my-busywork",
+        "Setup lists exactly 3 scheduled tasks with times in America/New_York: the brief on weekdays at 7:30 with meeting prep folded in, the shutdown on weekdays at 17:00, and the audit every other Friday",
+        "No generated file (Profile or helper) contains '{{', the TEMPLATE NOTES comment, or the templates' example names ('Will', 'Sam Lee', 'Q1 hiring plan'); 'e.g.' appears only inside the channel's feedback line"
+      ]
+    },
+    {
+      "id": "bfe-02-priya-plan-cap",
+      "name": "ChatGPT Plus: task cap, no Profile writes, no sub-agents",
+      "tests": "Capability fit",
+      "smoke": true,
+      "prompt": "set up focus-engine for me",
+      "files": [
+        "evals/fixtures/bfe-02-priya-plan-cap/"
+      ],
+      "expected_output": "With 2 of 5 task slots free, setup merges meeting prep into the brief, schedules the brief and shutdown (Mon–Thu, Denver time), offers the audit on demand, puts the full helper instruction in each task prompt, designs Profile updates blocks, uses the separate re-check pass, and explains the trade-offs once.",
+      "expectations": [
+        "Setup creates at most 2 new scheduled tasks (keeping Priya's 3 existing ones, total at most 5): the brief with meeting prep folded in at 9:00 Mon–Thu and the shutdown at 15:30 Mon–Thu, both in America/Denver; the audit is on demand",
+        "Each scheduled task prompt contains the full generated helper instruction, not a pointer to a custom GPT, a project, or an attached file",
+        "Setup never recommends or creates a custom GPT",
+        "The generated brief and shutdown instructions both require every delivery to end with a fenced 'Profile updates' block, and both use a separate re-check pass rather than sub-agents",
+        "The trade-offs (task cap and merging, no direct Profile writes, in-app delivery) are explained in one setup message and not repeated in later turns",
+        "No generated helper file contains 'ChatGPT', 'OpenAI', 'my plan', 'your plan', 'limitation' or '{{'"
+      ]
+    },
+    {
+      "id": "bfe-03-two-helpers-admin-blocked",
+      "name": "Only two helpers, on an admin-restricted Claude Enterprise account",
+      "tests": "User choice + admin gate",
+      "prompt": "set up my AI assistant",
+      "files": [
+        "evals/fixtures/bfe-03-two-helpers-admin-blocked/"
+      ],
+      "expected_output": "Setup generates only the brief and shutdown, keeps rows for prep and audit in the Profile set to off, notices that cloud runs and 'Always allow' are off, writes a filled admin note to Rachel Moss, and designs around per-task approvals until IT changes the settings.",
+      "expectations": [
+        "Exactly two helper files are generated (my-smart-assistant and shut-down-my-day); no prep-my-meetings or hand-off-my-busywork file is generated",
+        "The Profile's Helper settings table has rows for prep-my-meetings and hand-off-my-busywork with On set to off and default settings filled in",
+        "Setup produces an admin note addressed to Rachel Moss, from Owen Grady, asking for 'Run Cowork in the cloud' and 'Allow \"Always allow\" for connector tools', with no '{{' left",
+        "Setup tells Owen once, in plain words, that until IT turns on cloud runs his helpers only run while his laptop is awake and the app is open",
+        "The generated helpers deliver in-app and end each delivery with a 'Profile updates' block (not direct Profile writes or Slack DMs), and contain no mention of admins, Enterprise, or settings",
+        "Exactly two scheduled tasks are listed: brief weekdays 7:45 and shutdown weekdays 16:30, in America/Chicago"
+      ]
+    },
+    {
+      "id": "bfe-04a-tailor-sales-vp",
+      "name": "Tailoring pair A: sales VP (compare with bfe-04b)",
+      "tests": "Tailoring",
+      "prompt": "build my focus engine — just the morning brief for now",
+      "files": [
+        "evals/fixtures/bfe-04a-tailor-sales-vp/"
+      ],
+      "expected_output": "One generated brief for Maya: Slack, Gmail, Calendar and HubSpot sources; 7:30 weekdays to Slack DM; four sections; cap 7; deal and hiring ranking rules. Graded alongside bfe-04b: the two briefs must differ in sources, sections, timing and cap.",
+      "expectations": [
+        "The generated brief's sources list names Slack (#deals, #leadership, #hiring, DMs), Gmail, Google Calendar and HubSpot, and skips #random and #social",
+        "The brief runs at 7:30 on weekdays in America/New_York and delivers to Slack DM with the thread-reply + reactions feedback line",
+        "The brief has all four sections (Needs you, Waiting on others, Coming up, FYI) and a Needs you cap of 7",
+        "The ranking guidance names the Acme renewal and Globex expansion, and Dana Whitfield and Priya Shah as VIPs",
+        "The generated file contains no '{{' and no template guidance or example text ('source_list', 'priority_guidance', 'Will', 'Sam Lee')"
+      ]
+    },
+    {
+      "id": "bfe-04b-tailor-researcher",
+      "name": "Tailoring pair B: researcher with deep-work mornings, email only (compare with bfe-04a)",
+      "tests": "Tailoring",
+      "prompt": "build my focus engine — just the morning brief for now",
+      "files": [
+        "evals/fixtures/bfe-04b-tailor-researcher/"
+      ],
+      "expected_output": "One generated brief for Dr. Ines Okafor: Gmail only; 12:15 weekdays after her deep-work block, by email; two sections (Needs you, Deadlines in the next two weeks); cap 3; Profile as a local markdown file since she has no doc tool.",
+      "expectations": [
+        "The generated brief's only source is Gmail; it does not list Slack, a calendar, or a CRM as sources",
+        "The brief runs at 12:15 on weekdays in America/Los_Angeles (after the 8:00–12:00 deep-work block), delivers by email to Ines, and uses the reply-to-this-email feedback line",
+        "The brief has exactly two sections, Needs you and deadlines in the next two weeks, with a cap of 3; it has no Waiting on others or FYI section",
+        "The ranking guidance names the Nature Methods revision (Dec 18) and the R01 resubmission (Feb 5), and contains no sales vocabulary ('deal', 'pipeline', 'quota', 'HubSpot')",
+        "The generated file contains no '{{' and no template guidance or example text; the Profile is offered as a local markdown file"
+      ]
+    },
+    {
+      "id": "bfe-05-rerun-role-change",
+      "name": "Change mode 3 months later after a promotion",
+      "tests": "Upgrade / change",
+      "prompt": "I got promoted to CRO last month and my job looks different now. Update my focus engine.",
+      "files": [
+        "evals/fixtures/bfe-05-rerun-role-change/"
+      ],
+      "expected_output": "Setup detects Change mode, gathers the new role, priorities, people and sources, shows a plain-bullet diff for the Profile and for the brief and prep helpers before writing, then updates the readable sections and regenerates only the affected helpers, keeping the ledger, events and decision log.",
+      "expectations": [
+        "Before writing anything, setup shows a diff as plain bullets per changed item (Profile sections, my-smart-assistant, prep-my-meetings) and asks Maya to approve it",
+        "The updated Profile says Chief Revenue Officer, lists the three new priorities (net revenue retention 115%, Customer Success pods by April 1, partner launch in March) with last confirmed 2027-02-15, and adds Owen Grady as direct report and VIP",
+        "Ledger entries L-0410, L-0411, L-0412 and L-0413, the three existing events, and both Decision log rows are still present; L-0411 keeps snoozed_until 2027-02-16T12:30:00Z",
+        "The regenerated my-smart-assistant watches #cs-escalations and no longer #hiring, uses a Needs you cap of 6, and names the new priorities; the regenerated prep-my-meetings also preps meetings with customers renewing in the next 90 days",
+        "shut-down-my-day and hand-off-my-busywork are reported as unchanged (not regenerated), and the three existing scheduled tasks keep their times",
+        "The Setup answers block is updated with the new role and sources, and no regenerated file contains '{{' or 'VP of Sales'"
+      ]
+    },
+    {
+      "id": "bfe-06-free-no-docs",
+      "name": "Free plan, no connectors, no cloud doc tool",
+      "tests": "Degraded install",
+      "prompt": "build my focus engine",
+      "files": [
+        "evals/fixtures/bfe-06-free-no-docs/"
+      ],
+      "expected_output": "Setup makes a local markdown Profile, generates the brief and shutdown as saved prompts (optionally a skill) with phone-calendar reminders at 6:45 and 3:15 weekdays, says once that they won't run on their own, and builds a brief that starts by asking for a paste.",
+      "expectations": [
+        "The Profile is delivered as a local markdown file for Theo to save in a laptop folder; setup does not try to create it in Google Docs, Notion or OneDrive",
+        "Each chosen helper is given as a saved prompt (or project / skill) plus a phone-calendar reminder: brief at 6:45 and shutdown at 3:15, weekdays, America/New_York",
+        "Setup says plainly, exactly once, that nothing will run automatically and Theo starts each helper himself with one paste",
+        "Setup does not create or claim to create any scheduled task, and never says a helper 'will run' at a time on its own",
+        "The generated brief starts by asking Theo to paste today's calendar and inbox, lists the sources it did not check, and ends with a 'Profile updates' block",
+        "No generated file contains '{{', 'Free plan', or 'can't schedule'"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "user": "maya@northwind.example",
+  "threads": [
+    {
+      "id": "18f4c3d8",
+      "subject": "Initech — intro call Friday",
+      "labels": [
+        "INBOX"
+      ],
+      "messages": [
+        {
+          "from": "sam@northwind.example",
+          "to": [
+            "maya@northwind.example"
+          ],
+          "at": "2026-11-11T19:30:00Z",
+          "body": "Carla Mendes at Initech is evaluating three vendors for Q1. She wants to hear how we handle multi-region data. Could you join Friday at 10?"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "deals": [
+    {
+      "id": "deal/1012",
+      "name": "Umbrella Health — new business",
+      "owner": "Sam Ortiz",
+      "stage": "Contract",
+      "amount": 52000,
+      "next_step": "Contract walkthrough with Grace Liu",
+      "next_step_due": "2026-11-12",
+      "contacts": [
+        "Grace Liu"
+      ]
+    }
+  ]
+}

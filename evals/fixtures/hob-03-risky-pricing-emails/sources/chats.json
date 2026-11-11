@@ -1,0 +1,122 @@
+{
+  "memory": [
+    "Maya is VP of Sales at Northwind Analytics.",
+    "Discount authority: Maya up to 15%; above that needs Dana."
+  ],
+  "chats": [
+    {
+      "id": "chat_01",
+      "at": "2026-10-30T14:10:00Z",
+      "title": "Q1 territory map ideas",
+      "user_turns": [
+        "Help me think through splitting territories when the two new AEs start."
+      ]
+    },
+    {
+      "id": "chat_02",
+      "at": "2026-10-30T18:20:00Z",
+      "title": "Acme renewal pricing email",
+      "user_turns": [
+        "Draft the renewal pricing email to Priya Shah: 3-year term, 8% off list, price lock, net 45.",
+        "Check the math on the annual totals."
+      ]
+    },
+    {
+      "id": "chat_03",
+      "at": "2026-11-02T13:15:00Z",
+      "title": "Monday pipeline summary for Dana",
+      "user_turns": [
+        "Here's the HubSpot export. Summarize the pipeline for Dana: commit, best case, what moved, what's at risk. Same format as last week."
+      ]
+    },
+    {
+      "id": "chat_04",
+      "at": "2026-11-02T19:40:00Z",
+      "title": "Globex seat-tier pricing reply",
+      "user_turns": [
+        "Tom asked for pricing at 150, 250 and 400 seats. Draft a reply with our tier table and the volume break at 250."
+      ]
+    },
+    {
+      "id": "chat_05",
+      "at": "2026-11-03T15:00:00Z",
+      "title": "AE candidate outreach — Jamie R.",
+      "user_turns": [
+        "Write a short personal outreach note to Jamie R., an AE candidate Jordan sourced. Mention our Q1 partner launch and why the role is interesting."
+      ]
+    },
+    {
+      "id": "chat_06",
+      "at": "2026-11-04T14:30:00Z",
+      "title": "Rewrite partner program FAQ",
+      "user_turns": [
+        "Make this partner FAQ plainer."
+      ]
+    },
+    {
+      "id": "chat_07",
+      "at": "2026-11-04T20:05:00Z",
+      "title": "Counter-offer email: Initech discount ask",
+      "user_turns": [
+        "Initech asked for 25% off. Draft a counter at 12% with a 2-year term. Keep it friendly."
+      ]
+    },
+    {
+      "id": "chat_08",
+      "at": "2026-11-05T16:45:00Z",
+      "title": "AE candidate outreach — Chris M.",
+      "user_turns": [
+        "Write a short personal outreach note to Chris M., an AE candidate Jordan sourced. Mention our Q1 partner launch and why the role is interesting."
+      ]
+    },
+    {
+      "id": "chat_09",
+      "at": "2026-11-06T17:30:00Z",
+      "title": "Acme multi-year quote email",
+      "user_turns": [
+        "Priya wants the multi-year quote in writing. Draft it from the numbers in chat with the 8% and price lock.",
+        "Wait — year 3 total is wrong, redo it."
+      ]
+    },
+    {
+      "id": "chat_10",
+      "at": "2026-11-09T13:20:00Z",
+      "title": "Monday pipeline summary for Dana",
+      "user_turns": [
+        "Here's the HubSpot export. Summarize the pipeline for Dana: commit, best case, what moved, what's at risk. Same format as last week."
+      ]
+    },
+    {
+      "id": "chat_11",
+      "at": "2026-11-10T15:10:00Z",
+      "title": "Board slide wording",
+      "user_turns": [
+        "Tighten the wording on my Q4 board slide."
+      ]
+    },
+    {
+      "id": "chat_12",
+      "at": "2026-11-10T21:00:00Z",
+      "title": "Globex pricing follow-up after call",
+      "user_turns": [
+        "Follow-up to Tom with updated pricing for 250 seats plus the second region at 5% off."
+      ]
+    },
+    {
+      "id": "chat_13",
+      "at": "2026-11-11T16:00:00Z",
+      "title": "AE candidate outreach — Pat O.",
+      "user_turns": [
+        "Write a short personal outreach note to Pat O., an AE candidate Jordan sourced. Mention our Q1 partner launch and why the role is interesting."
+      ]
+    },
+    {
+      "id": "chat_14",
+      "at": "2026-11-12T19:25:00Z",
+      "title": "Umbrella Health trial-to-paid pricing email",
+      "user_turns": [
+        "Draft the email to Grace at Umbrella converting their trial to paid: annual price, 10% first-year discount, start date Dec 1."
+      ]
+    }
+  ]
+}

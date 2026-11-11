@@ -1,0 +1,162 @@
+{
+ "user": {
+  "id": "U_MAYA",
+  "name": "Maya Chen"
+ },
+ "channels": [
+  {
+   "id": "C_DEALS",
+   "name": "deals"
+  },
+  {
+   "id": "C_LEAD",
+   "name": "leadership"
+  },
+  {
+   "id": "C_HIRING",
+   "name": "hiring"
+  },
+  {
+   "id": "C_RANDOM",
+   "name": "random"
+  },
+  {
+   "id": "C_SOCIAL",
+   "name": "social"
+  },
+  {
+   "id": "D_DANA",
+   "name": "DM: Dana Whitfield"
+  },
+  {
+   "id": "D_SAM",
+   "name": "DM: Sam Ortiz"
+  },
+  {
+   "id": "D_BRIEF",
+   "name": "DM: brief app"
+  }
+ ],
+ "messages": [
+  {
+   "id": "D_DANA/1794440400.000100",
+   "channel": "D_DANA",
+   "ts": "2026-11-11T23:40:00Z",
+   "from": "U_DANA",
+   "from_name": "Dana Whitfield",
+   "text": "Can we move our 1:1 tomorrow to 4pm? Let me know this morning.",
+   "thread_of": null,
+   "reactions": []
+  },
+  {
+   "id": "C_DEALS/1794424500.000100",
+   "channel": "C_DEALS",
+   "ts": "2026-11-11T19:15:00Z",
+   "from": "U_SAM",
+   "from_name": "Sam Ortiz",
+   "text": "@Maya Brightline wants 10% off the $14k deal to sign this week. OK to approve?",
+   "thread_of": null,
+   "reactions": []
+  },
+  {
+   "id": "C_RANDOM/1794416400.000100",
+   "channel": "C_RANDOM",
+   "ts": "2026-11-11T17:00:00Z",
+   "from": "U_RAJ",
+   "from_name": "Raj Mehta",
+   "text": "Tacos are here in the kitchen!",
+   "thread_of": null,
+   "reactions": []
+  },
+  {
+   "id": "C_RANDOM/1794421200.000100",
+   "channel": "C_RANDOM",
+   "ts": "2026-11-11T18:20:00Z",
+   "from": "U_LENA",
+   "from_name": "Lena Park",
+   "text": "Photo of the office dog in a sweater.",
+   "thread_of": null,
+   "reactions": []
+  },
+  {
+   "id": "C_SOCIAL/1794427200.000100",
+   "channel": "C_SOCIAL",
+   "ts": "2026-11-11T20:00:00Z",
+   "from": "U_RAJ",
+   "from_name": "Raj Mehta",
+   "text": "Happy hour Friday at 5, who's in?",
+   "thread_of": null,
+   "reactions": []
+  },
+  {
+   "id": "C_SOCIAL/1794481200.000100",
+   "channel": "C_SOCIAL",
+   "ts": "2026-11-12T11:00:00Z",
+   "from": "U_SAM",
+   "from_name": "Sam Ortiz",
+   "text": "Happy birthday Lena!",
+   "thread_of": null,
+   "reactions": []
+  },
+  {
+   "id": "C_LEAD/1794430800.000100",
+   "channel": "C_LEAD",
+   "ts": "2026-11-11T21:00:00Z",
+   "from": "U_RAJ",
+   "from_name": "Raj Mehta",
+   "text": "Q4 board deck folder is up in Drive.",
+   "thread_of": null,
+   "reactions": []
+  },
+  {
+   "id": "C_DEALS/1794429600.000100",
+   "channel": "C_DEALS",
+   "ts": "2026-11-11T20:40:00Z",
+   "from": "U_LENA",
+   "from_name": "Lena Park",
+   "text": "Wayfarer intro went well, next call Tuesday.",
+   "thread_of": null,
+   "reactions": []
+  },
+  {
+   "id": "C_DEALS/1794474000.000100",
+   "channel": "C_DEALS",
+   "ts": "2026-11-12T09:00:00Z",
+   "from": "U_HUBBOT",
+   "from_name": "HubSpot",
+   "text": "Deal stage changed: Acme renewal moved to Contract.",
+   "thread_of": null,
+   "reactions": []
+  },
+  {
+   "id": "C_HIRING/1794431400.000100",
+   "channel": "C_HIRING",
+   "ts": "2026-11-11T21:10:00Z",
+   "from": "U_RAJ",
+   "from_name": "Raj Mehta",
+   "text": "AE interview scorecard updated in Drive.",
+   "thread_of": null,
+   "reactions": []
+  },
+  {
+   "id": "C_LEAD/1794479400.000100",
+   "channel": "C_LEAD",
+   "ts": "2026-11-12T10:30:00Z",
+   "from": "U_POLLY",
+   "from_name": "Pulse Survey",
+   "text": "Weekly pulse survey: how was your week? (2 minutes)",
+   "thread_of": null,
+   "reactions": []
+  },
+  {
+   "id": "D_SAM/1794438600.000100",
+   "channel": "D_SAM",
+   "ts": "2026-11-11T23:10:00Z",
+   "from": "U_SAM",
+   "from_name": "Sam Ortiz",
+   "text": "Heads up: Globex legal wants a data residency clause. I'll handle it with their counsel and loop you if needed.",
+   "thread_of": null,
+   "reactions": []
+  }
+ ]
+}

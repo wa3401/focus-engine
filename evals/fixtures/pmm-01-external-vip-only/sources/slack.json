@@ -1,0 +1,32 @@
+{
+  "user": {
+    "id": "U_ME",
+    "name": "Maya Chen"
+  },
+  "channels": [
+    {
+      "id": "C_DEALS",
+      "name": "deals"
+    },
+    {
+      "id": "C_LEAD",
+      "name": "leadership"
+    },
+    {
+      "id": "D_FOCUS",
+      "name": "focus-engine (DM)"
+    }
+  ],
+  "messages": [
+    {
+      "id": "C_LEAD/1794434700.000100",
+      "channel": "C_LEAD",
+      "ts": "2026-11-11T22:05:00Z",
+      "from": "U_DANA",
+      "from_name": "Dana Whitfield",
+      "text": "For tomorrow's forecast review: I want a straight answer on whether Globex lands in Q4 or slips.",
+      "thread_of": null,
+      "reactions": []
+    }
+  ]
+}

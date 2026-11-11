@@ -1,0 +1,40 @@
+{
+  "user": "maya@northwind.example",
+  "threads": [
+    {
+      "id": "18f4a0c7",
+      "subject": "Moving our call to 3:30",
+      "labels": [
+        "INBOX"
+      ],
+      "messages": [
+        {
+          "from": "tom.becker@globex.example",
+          "to": [
+            "maya@northwind.example",
+            "lena@northwind.example"
+          ],
+          "at": "2026-11-12T17:40:00Z",
+          "body": "Maya, Lena — I've moved our call to 3:30. Alex is out sick today, so Nina Patel from procurement will join instead; she owns the paperwork from here."
+        }
+      ]
+    },
+    {
+      "id": "18f3a9c2",
+      "subject": "Globex expansion — proposal",
+      "labels": [
+        "SENT"
+      ],
+      "messages": [
+        {
+          "from": "maya@northwind.example",
+          "to": [
+            "tom.becker@globex.example"
+          ],
+          "at": "2026-11-10T20:05:00Z",
+          "body": "Tom — I'll send the expansion proposal with the revised seat tiers by Friday."
+        }
+      ]
+    }
+  ]
+}

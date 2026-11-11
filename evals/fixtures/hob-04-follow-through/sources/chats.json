@@ -1,0 +1,120 @@
+{
+  "memory": [
+    "Maya is VP of Sales at Northwind Analytics.",
+    "Saved prompt: 'Call notes → HubSpot' (built 2026-10-30)."
+  ],
+  "chats": [
+    {
+      "id": "chat_01",
+      "at": "2026-10-30T19:00:00Z",
+      "title": "Q1 comp plan questions",
+      "user_turns": [
+        "Help me list questions for Dana about Q1 AE ramp targets."
+      ]
+    },
+    {
+      "id": "chat_02",
+      "at": "2026-11-02T18:10:00Z",
+      "title": "Call notes → HubSpot update (saved prompt)",
+      "user_turns": [
+        "Run my 'Call notes → HubSpot' prompt on these Acme notes and give me the next step, due date and deal-stage change."
+      ]
+    },
+    {
+      "id": "chat_03",
+      "at": "2026-11-02T13:15:00Z",
+      "title": "Monday pipeline summary for Dana",
+      "user_turns": [
+        "Here's the HubSpot export. Summarize the pipeline for Dana: commit, best case, what moved, what's at risk. Same format as last week."
+      ]
+    },
+    {
+      "id": "chat_04",
+      "at": "2026-11-03T20:30:00Z",
+      "title": "Call notes → HubSpot update (saved prompt)",
+      "user_turns": [
+        "Run my 'Call notes → HubSpot' prompt on these Globex notes and give me the next step, due date and deal-stage change."
+      ]
+    },
+    {
+      "id": "chat_05",
+      "at": "2026-11-04T15:00:00Z",
+      "title": "AE candidate outreach — Jamie R.",
+      "user_turns": [
+        "Write a short personal outreach note to Jamie R., an AE candidate Jordan sourced. Mention our Q1 partner launch and why the role is interesting."
+      ]
+    },
+    {
+      "id": "chat_06",
+      "at": "2026-11-05T17:45:00Z",
+      "title": "Call notes → HubSpot update (saved prompt)",
+      "user_turns": [
+        "Run my 'Call notes → HubSpot' prompt on these Initech notes and give me the next step, due date and deal-stage change."
+      ]
+    },
+    {
+      "id": "chat_07",
+      "at": "2026-11-06T14:00:00Z",
+      "title": "Partner tiers brainstorm",
+      "user_turns": [
+        "Brainstorm three partner tiers for the Q1 program."
+      ]
+    },
+    {
+      "id": "chat_08",
+      "at": "2026-11-06T19:20:00Z",
+      "title": "Call notes → HubSpot update (saved prompt)",
+      "user_turns": [
+        "Run my 'Call notes → HubSpot' prompt on these Umbrella Health notes and give me the next step, due date and deal-stage change."
+      ]
+    },
+    {
+      "id": "chat_09",
+      "at": "2026-11-09T15:30:00Z",
+      "title": "AE candidate outreach — Chris M.",
+      "user_turns": [
+        "Write a short personal outreach note to Chris M., an AE candidate Jordan sourced. Mention our Q1 partner launch and why the role is interesting."
+      ]
+    },
+    {
+      "id": "chat_10",
+      "at": "2026-11-09T13:20:00Z",
+      "title": "Monday pipeline summary for Dana",
+      "user_turns": [
+        "Here's the HubSpot export. Summarize the pipeline for Dana: commit, best case, what moved, what's at risk. Same format as last week."
+      ]
+    },
+    {
+      "id": "chat_11",
+      "at": "2026-11-10T21:15:00Z",
+      "title": "Call notes → HubSpot update (saved prompt)",
+      "user_turns": [
+        "Run my 'Call notes → HubSpot' prompt on these Globex notes and give me the next step, due date and deal-stage change."
+      ]
+    },
+    {
+      "id": "chat_12",
+      "at": "2026-11-11T16:00:00Z",
+      "title": "AE candidate outreach — Pat O.",
+      "user_turns": [
+        "Write a short personal outreach note to Pat O., an AE candidate Jordan sourced. Mention our Q1 partner launch and why the role is interesting."
+      ]
+    },
+    {
+      "id": "chat_13",
+      "at": "2026-11-12T18:40:00Z",
+      "title": "Call notes → HubSpot update (saved prompt)",
+      "user_turns": [
+        "Run my 'Call notes → HubSpot' prompt on these Acme notes and give me the next step, due date and deal-stage change."
+      ]
+    },
+    {
+      "id": "chat_14",
+      "at": "2026-11-12T20:10:00Z",
+      "title": "Board slide wording",
+      "user_turns": [
+        "Tighten my Q4 board slide."
+      ]
+    }
+  ]
+}

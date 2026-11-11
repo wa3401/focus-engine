@@ -1,0 +1,9 @@
+{
+  "tool": "Microsoft 365 Copilot", "plan": "Microsoft 365 Copilot (nonprofit license)", "account": "work",
+  "schedule": true, "max_scheduled_tasks": 10, "existing_scheduled_tasks": [],
+  "connectors": ["outlook", "outlook_calendar", "teams", "onedrive"],
+  "connectors_in_schedule": true, "write_profile": false, "doc_tool": "OneDrive (Word)",
+  "send_email": false, "send_chat": false, "subagents": false, "past_chat_search": false,
+  "agents": true, "admin_blocks": [],
+  "field_limits": {"agent_instructions": 8000, "agent_description": 1000, "agent_name": 30, "scheduled_prompt": null}
+}

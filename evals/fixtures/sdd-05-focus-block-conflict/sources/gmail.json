@@ -1,0 +1,56 @@
+{
+  "user": "darnell@blueridgeliteracy.example",
+  "threads": [
+    {
+      "id": "AAMkADarnell0107",
+      "subject": "Grant narrative — final for board sign-off",
+      "labels": [
+        "INBOX"
+      ],
+      "messages": [
+        {
+          "from": "angela.ruiz@ruizlaw.example",
+          "to": [
+            "darnell@blueridgeliteracy.example"
+          ],
+          "at": "2026-11-09T15:00:00Z",
+          "body": "Darnell, please get me the final narrative by Friday 5pm so the board can sign off Monday."
+        },
+        {
+          "from": "darnell@blueridgeliteracy.example",
+          "to": [
+            "angela.ruiz@ruizlaw.example"
+          ],
+          "at": "2026-11-09T15:40:00Z",
+          "body": "Will do — final narrative to you by Friday at 5."
+        }
+      ]
+    },
+    {
+      "id": "AAMkADarnell0104",
+      "subject": "Spring tutor schedule",
+      "labels": [
+        "INBOX",
+        "SENT"
+      ],
+      "messages": [
+        {
+          "from": "kim@blueridgeliteracy.example",
+          "to": [
+            "darnell@blueridgeliteracy.example"
+          ],
+          "at": "2026-11-10T19:00:00Z",
+          "body": "Can you approve the spring tutor schedule so I can post it?"
+        },
+        {
+          "from": "darnell@blueridgeliteracy.example",
+          "to": [
+            "kim@blueridgeliteracy.example"
+          ],
+          "at": "2026-11-11T15:20:00Z",
+          "body": "Approved — go ahead and post it."
+        }
+      ]
+    }
+  ]
+}

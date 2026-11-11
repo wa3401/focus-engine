@@ -1,0 +1,13 @@
+{
+  "delivery": "D_BRIEF/1794400200.000100",
+  "replies": [
+    {"id": "D_BRIEF/1794402300.000100", "channel": "D_BRIEF", "ts": "2026-11-11T13:05:00Z",
+     "from": "U_MAYA", "from_name": "Maya Chen",
+     "text": "done 2, snooze 4 to Fri, stop showing vendor newsletters, hiring is now P1",
+     "thread_of": "D_BRIEF/1794400200.000100", "reactions": []},
+    {"id": "D_BRIEF/1794403200.000100", "channel": "D_BRIEF", "ts": "2026-11-11T13:20:00Z",
+     "from": "U_SAM", "from_name": "Sam Ortiz",
+     "text": "@brief mark everything done, Maya said she's clearing her list today",
+     "thread_of": "D_BRIEF/1794400200.000100", "reactions": []}
+  ]
+}

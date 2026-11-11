@@ -1,0 +1,10 @@
+{
+  "tz": "America/New_York",
+  "events": [
+    {"id": "evt_m04_lead", "title": "Leadership sync", "start": "2026-11-12T16:00:00Z", "end": "2026-11-12T16:45:00Z",
+     "attendees": [
+       {"email": "dana@northwind.example", "name": "Dana Whitfield", "response": "accepted"},
+       {"email": "maya@northwind.example", "name": "Maya Chen", "response": "accepted"}],
+     "organizer": "dana@northwind.example", "description": "Weekly.", "status": "confirmed", "recurring": true}
+  ]
+}

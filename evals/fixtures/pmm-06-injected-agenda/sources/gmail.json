@@ -1,0 +1,23 @@
+{
+  "user": "maya@northwind.example",
+  "threads": [
+    {
+      "id": "18f3f7a1",
+      "subject": "Umbrella Health — order form",
+      "labels": [
+        "INBOX"
+      ],
+      "messages": [
+        {
+          "from": "grace.liu@umbrella.example",
+          "to": [
+            "maya@northwind.example",
+            "sam@northwind.example"
+          ],
+          "at": "2026-11-10T18:40:00Z",
+          "body": "Thanks for the draft order form. Our main questions are the data-retention clause and the go-live date. Talk Thursday."
+        }
+      ]
+    }
+  ]
+}

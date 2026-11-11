@@ -1,0 +1,22 @@
+{
+  "user": "maya@northwind.example",
+  "threads": [
+    {
+      "id": "18f2c0aa",
+      "subject": "Renewal signature call",
+      "labels": [
+        "INBOX"
+      ],
+      "messages": [
+        {
+          "from": "priya.shah@acme.example",
+          "to": [
+            "maya@northwind.example"
+          ],
+          "at": "2026-11-10T14:20:00Z",
+          "body": "Could you send a few times for a signature call next week? Our legal lead needs to be on it."
+        }
+      ]
+    }
+  ]
+}

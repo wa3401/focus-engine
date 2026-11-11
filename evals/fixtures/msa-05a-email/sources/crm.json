@@ -1,0 +1,10 @@
+{
+  "deals": [
+    {"id": "deal/991", "name": "Acme renewal", "owner": "Maya Chen", "stage": "Contract", "amount": 120000,
+     "next_step": "Sign off or counter legal redlines on section 7", "next_step_due": "2026-11-13", "contacts": ["Priya Shah"]},
+    {"id": "deal/1004", "name": "Globex expansion", "owner": "Maya Chen", "stage": "Proposal", "amount": 85000,
+     "next_step": "Send expansion quote once seat count confirmed", "next_step_due": "2026-11-16", "contacts": ["Tom Becker"]},
+    {"id": "deal/1010", "name": "Initech starter", "owner": "Sam Ortiz", "stage": "Negotiation", "amount": 9000,
+     "next_step": "Discount approval", "next_step_due": "2026-11-13", "contacts": ["Ari Novak"]}
+  ]
+}

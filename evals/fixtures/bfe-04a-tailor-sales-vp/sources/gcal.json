@@ -1,0 +1,11 @@
+{
+  "tz": "America/New_York",
+  "events": [
+    {"id": "evt_b01_lead", "title": "Leadership sync", "start": "2026-11-05T16:00:00Z", "end": "2026-11-05T16:45:00Z",
+     "attendees": [{"email": "dana@northwind.example", "name": "Dana Whitfield", "response": "accepted"}, {"email": "maya@northwind.example", "name": "Maya Chen", "response": "accepted"}],
+     "organizer": "dana@northwind.example", "description": "Weekly.", "status": "confirmed", "recurring": true},
+    {"id": "evt_b01_acme", "title": "Acme renewal check-in", "start": "2026-11-04T18:00:00Z", "end": "2026-11-04T18:30:00Z",
+     "attendees": [{"email": "priya.shah@acme.example", "name": "Priya Shah", "response": "accepted"}, {"email": "maya@northwind.example", "name": "Maya Chen", "response": "accepted"}],
+     "organizer": "maya@northwind.example", "description": "", "status": "confirmed", "recurring": false}
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "tool": "Claude", "plan": "Pro", "account": "personal",
+  "schedule": true, "max_scheduled_tasks": null,
+  "connectors": ["gmail"],
+  "connectors_in_schedule": true, "write_profile": false, "doc_tool": "none",
+  "send_email": true, "send_email_targets": ["self"], "send_chat": false,
+  "subagents": false, "past_chat_search": true, "admin_blocks": [], "field_limits": {}
+}

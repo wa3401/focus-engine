@@ -1,0 +1,30 @@
+{
+  "deals": [
+    {
+      "id": "deal/991",
+      "name": "Acme — 2027 renewal",
+      "owner": "Maya Chen",
+      "stage": "Negotiation",
+      "amount": 120000,
+      "next_step": "Security questionnaire answers to Priya Shah",
+      "next_step_due": "2026-11-13",
+      "contacts": [
+        "Priya Shah",
+        "Ben Alvarez"
+      ]
+    },
+    {
+      "id": "deal/1004",
+      "name": "Globex — analytics expansion",
+      "owner": "Lena Park",
+      "stage": "Proposal",
+      "amount": 64000,
+      "next_step": "Send expansion proposal with revised seat tiers",
+      "next_step_due": "2026-11-13",
+      "contacts": [
+        "Tom Becker",
+        "Nina Patel"
+      ]
+    }
+  ]
+}

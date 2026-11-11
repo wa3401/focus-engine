@@ -1,0 +1,11 @@
+{
+  "memory": [
+    "Maya Chen was promoted to Chief Revenue Officer at Northwind Analytics in January 2027.",
+    "As CRO, Maya now owns Customer Success as well as Sales; Owen Grady (Head of Customer Success) reports to her.",
+    "Both AE hires (Nadia Brooks and Leo Varga) started in January."
+  ],
+  "chats": [
+    {"id": "chat_0911", "at": "2027-02-08T15:00:00Z", "title": "CRO first 90 days",
+     "user_turns": ["I'm CRO now, help me plan my first 90 days: net revenue retention, CS reorg, partner launch"]}
+  ]
+}

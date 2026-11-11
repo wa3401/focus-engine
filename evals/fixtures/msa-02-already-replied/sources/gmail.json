@@ -1,0 +1,22 @@
+{
+  "user": "maya@northwind.example",
+  "threads": [
+    {"id": "19a1d0e1", "subject": "Board slide numbers", "labels": ["SENT", "INBOX"],
+     "messages": [
+       {"from": "maya@northwind.example", "to": ["dana@northwind.example"], "at": "2026-11-11T18:05:00Z",
+        "body": "Dana, answering your Slack here so you have the file: pipeline coverage is 3.1x and win rate is 27% for the quarter to date. Sheet attached. Maya"},
+       {"from": "dana@northwind.example", "to": ["maya@northwind.example"], "at": "2026-11-11T18:30:00Z",
+        "body": "Perfect, thanks."}
+     ]},
+    {"id": "19a1d2f3", "subject": "Acme renewal — redlines on MSA section 7", "labels": ["INBOX", "IMPORTANT"],
+     "messages": [
+       {"from": "priya.shah@acme.example", "to": ["maya@northwind.example"], "at": "2026-11-10T20:45:00Z",
+        "body": "Hi Maya, our legal team sent redlines on section 7 (liability cap). We need your sign-off or a counter by Friday noon to keep the Dec 1 start date. Thanks, Priya"}
+     ]},
+    {"id": "19a1d4a5", "subject": "Need to postpone our QBR", "labels": ["INBOX"],
+     "messages": [
+       {"from": "tom.becker@globex.example", "to": ["maya@northwind.example", "sam@northwind.example"], "at": "2026-11-11T19:40:00Z",
+        "body": "Maya, Sam, our CFO pulled me into budget reviews Thursday so I've cancelled the QBR. I'll send new times next week."}
+     ]}
+  ]
+}

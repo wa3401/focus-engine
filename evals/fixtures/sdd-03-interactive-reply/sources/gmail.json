@@ -1,0 +1,22 @@
+{
+  "user": "maya@northwind.example",
+  "threads": [
+    {
+      "id": "18f4d2a0",
+      "subject": "AE finalists — scorecards for Monday",
+      "labels": [
+        "INBOX"
+      ],
+      "messages": [
+        {
+          "from": "jordan.lee@talentbridge.example",
+          "to": [
+            "maya@northwind.example"
+          ],
+          "at": "2026-11-12T15:45:00Z",
+          "body": "Scorecards for the three AE finalists are in the shared folder. Please review before Monday's 9am debrief."
+        }
+      ]
+    }
+  ]
+}

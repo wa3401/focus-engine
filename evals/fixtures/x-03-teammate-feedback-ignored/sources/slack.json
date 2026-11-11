@@ -1,0 +1,56 @@
+{
+  "user": {
+    "id": "U_ME",
+    "name": "Maya Chen"
+  },
+  "channels": [
+    {
+      "id": "C_DEALS",
+      "name": "deals"
+    },
+    {
+      "id": "C_LEAD",
+      "name": "leadership"
+    },
+    {
+      "id": "D_DANA",
+      "name": "Dana Whitfield (DM)"
+    },
+    {
+      "id": "C_MAYAFOCUS",
+      "name": "maya-focus (private: Maya, Sam Ortiz, Lena Park)"
+    }
+  ],
+  "messages": [
+    {
+      "id": "D_DANA/1794348000.000100",
+      "channel": "D_DANA",
+      "ts": "2026-11-10T22:00:00Z",
+      "from": "U_DANA",
+      "from_name": "Dana Whitfield",
+      "text": "Maya, I need your yes/no on the Q4 commission plan changes before I send them to finance.",
+      "thread_of": null,
+      "reactions": []
+    },
+    {
+      "id": "C_LEAD/1794341700.000100",
+      "channel": "C_LEAD",
+      "ts": "2026-11-10T20:15:00Z",
+      "from": "U_RAJ",
+      "from_name": "Raj Mehta",
+      "text": "Forecast roll-up is ready — need your sign-off before it goes to Dana.",
+      "thread_of": null,
+      "reactions": []
+    },
+    {
+      "id": "C_LEAD/1794409200.000100",
+      "channel": "C_LEAD",
+      "ts": "2026-11-11T15:00:00Z",
+      "from": "U_ME",
+      "from_name": "Maya Chen",
+      "text": "Signed off — send it.",
+      "thread_of": "C_LEAD/1794341700.000100",
+      "reactions": []
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "memory": [
+    "Maya Chen is VP of Sales at Northwind Analytics (northwind.example), a 40-person B2B SaaS company.",
+    "Maya manages two account executives, Sam Ortiz and Lena Park.",
+    "Maya reports to Dana Whitfield, the CEO.",
+    "Maya's Q4 goals: close the Acme renewal ($120k) and the Globex expansion by Dec 15.",
+    "Maya is hiring two account executives by end of January, through recruiter Jordan Lee at TalentBridge.",
+    "Maya is planning a partner program to launch in Q1.",
+    "Maya works in New York (Eastern time), usually 8:00 to 5:30 on weekdays.",
+    "Maya prefers short bullet answers."
+  ],
+  "chats": [
+    {"id": "chat_0301", "at": "2026-10-20T13:10:00Z", "title": "Acme renewal negotiation prep",
+     "user_turns": ["Priya Shah is my champion at Acme, help me prep for the renewal call", "What concessions should I hold back on a $120k renewal?"]},
+    {"id": "chat_0322", "at": "2026-10-27T15:40:00Z", "title": "Globex expansion email",
+     "user_turns": ["Draft a follow-up to Tom Becker at Globex about expansion seats"]},
+    {"id": "chat_0340", "at": "2026-10-29T18:05:00Z", "title": "Inbox triage rant",
+     "user_turns": ["I'm drowning in vendor newsletters and HubSpot digest emails, how do I filter them?", "Also #random and #social in Slack are a total distraction"]},
+    {"id": "chat_0355", "at": "2026-10-31T14:20:00Z", "title": "AE job description",
+     "user_turns": ["Write an AE job description for Northwind, mid-market, Boston or remote"]},
+    {"id": "chat_0371", "at": "2026-11-01T16:00:00Z", "title": "Pipeline review with RevOps",
+     "user_turns": ["Raj Mehta in RevOps sent me a pipeline export, summarize the risks"]}
+  ]
+}

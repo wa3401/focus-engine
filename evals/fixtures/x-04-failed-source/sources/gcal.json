@@ -1,0 +1,91 @@
+{
+  "tz": "America/New_York",
+  "events": [
+    {
+      "id": "evt_standup_1112",
+      "title": "Sales standup",
+      "start": "2026-11-12T14:00:00Z",
+      "end": "2026-11-12T14:15:00Z",
+      "attendees": [
+        {
+          "email": "maya@northwind.example",
+          "name": "Maya Chen",
+          "response": "accepted"
+        },
+        {
+          "email": "sam@northwind.example",
+          "name": "Sam Ortiz",
+          "response": "accepted"
+        },
+        {
+          "email": "lena@northwind.example",
+          "name": "Lena Park",
+          "response": "accepted"
+        },
+        {
+          "email": "raj@northwind.example",
+          "name": "Raj Mehta",
+          "response": "accepted"
+        }
+      ],
+      "organizer": "maya@northwind.example",
+      "description": "",
+      "status": "confirmed",
+      "recurring": true
+    },
+    {
+      "id": "evt_acme_checkin",
+      "title": "Acme renewal check-in",
+      "start": "2026-11-12T16:00:00Z",
+      "end": "2026-11-12T16:45:00Z",
+      "attendees": [
+        {
+          "email": "maya@northwind.example",
+          "name": "Maya Chen",
+          "response": "accepted"
+        },
+        {
+          "email": "priya.shah@acme.example",
+          "name": "Priya Shah",
+          "response": "accepted"
+        },
+        {
+          "email": "sam@northwind.example",
+          "name": "Sam Ortiz",
+          "response": "accepted"
+        }
+      ],
+      "organizer": "priya.shah@acme.example",
+      "description": "Agenda: questionnaire status, multi-year term, signature timeline.",
+      "status": "confirmed",
+      "recurring": false
+    },
+    {
+      "id": "evt_dana_forecast",
+      "title": "Q4 forecast review",
+      "start": "2026-11-12T19:00:00Z",
+      "end": "2026-11-12T19:45:00Z",
+      "attendees": [
+        {
+          "email": "maya@northwind.example",
+          "name": "Maya Chen",
+          "response": "accepted"
+        },
+        {
+          "email": "dana@northwind.example",
+          "name": "Dana Whitfield",
+          "response": "accepted"
+        },
+        {
+          "email": "raj@northwind.example",
+          "name": "Raj Mehta",
+          "response": "accepted"
+        }
+      ],
+      "organizer": "dana@northwind.example",
+      "description": "",
+      "status": "confirmed",
+      "recurring": false
+    }
+  ]
+}

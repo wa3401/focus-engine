@@ -1,0 +1,9 @@
+{
+  "tool": "Claude", "plan": "Free", "account": "personal",
+  "schedule": false, "max_scheduled_tasks": 0,
+  "connectors": [],
+  "connectors_in_schedule": false, "write_profile": false, "doc_tool": "none",
+  "send_email": false, "send_chat": false,
+  "subagents": false, "past_chat_search": false, "projects": true, "skills": true,
+  "admin_blocks": [], "field_limits": {}
+}

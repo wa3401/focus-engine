@@ -1,0 +1,9 @@
+{
+  "memory": [],
+  "chats": [
+    {"id": "chat_d401", "at": "2026-10-29T18:00:00Z", "title": "Board packet",
+     "user_turns": ["Summarize last month's board minutes for Angela Ruiz, the board chair"]},
+    {"id": "chat_d402", "at": "2026-11-02T15:00:00Z", "title": "Grant timeline",
+     "user_turns": ["The state literacy grant is due Dec 1, make me a work-back plan with Marcus and Kim"]}
+  ]
+}

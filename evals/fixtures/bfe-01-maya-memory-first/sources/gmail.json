@@ -1,0 +1,7 @@
+{
+  "user": "maya@northwind.example",
+  "threads": [
+    {"id": "19a00101", "subject": "Re: AE candidates", "labels": ["INBOX"],
+     "messages": [{"from": "jordan.lee@talentbridge.example", "to": ["maya@northwind.example"], "at": "2026-11-02T13:00:00Z", "body": "Two more profiles coming this week. Jordan"}]}
+  ]
+}

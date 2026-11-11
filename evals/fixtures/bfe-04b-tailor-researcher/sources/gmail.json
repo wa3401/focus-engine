@@ -1,0 +1,9 @@
+{
+  "user": "ines.okafor@halden.example",
+  "threads": [
+    {"id": "19c00101", "subject": "Revision figures", "labels": ["INBOX"],
+     "messages": [{"from": "kwame.asante@halden.example", "to": ["ines.okafor@halden.example"], "at": "2026-11-02T17:40:00Z", "body": "Ines, the new Figure 3 panels are in the lab drive. Can you look before Thursday? Kwame"}]},
+    {"id": "19c00102", "subject": "Call for papers: ISMB 2027", "labels": ["INBOX", "CATEGORY_PROMOTIONS"],
+     "messages": [{"from": "cfp@conference-alerts.example", "to": ["ines.okafor@halden.example"], "at": "2026-11-02T15:00:00Z", "body": "Submit your paper today."}]}
+  ]
+}

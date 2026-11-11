@@ -1,0 +1,109 @@
+{
+  "memory": [
+    "Priya runs Raman Studio, a solo brand consultancy.",
+    "Clients: Fernwood (Leo Grant), Oakline Coffee (Mia Sato).",
+    "Priya prefers short client emails: 5 bullets max, warm but direct."
+  ],
+  "chats": [
+    {
+      "id": "chat_01",
+      "at": "2026-10-29T16:05:00Z",
+      "title": "Fernwood weekly status",
+      "user_turns": [
+        "Turn my notes into the weekly status email for Leo at Fernwood. Notes: logo round 2 approved, color system 70% done, need their photo assets by Tue, next review Nov 5.",
+        "Make it 5 bullets and end with what I need from him."
+      ]
+    },
+    {
+      "id": "chat_02",
+      "at": "2026-10-29T19:30:00Z",
+      "title": "Logo lockup feedback",
+      "user_turns": [
+        "Here's Leo's feedback on the lockup. Help me figure out what he actually means by 'more confident'."
+      ]
+    },
+    {
+      "id": "chat_03",
+      "at": "2026-11-02T16:40:00Z",
+      "title": "Oakline weekly update",
+      "user_turns": [
+        "Weekly status for Mia at Oakline from these notes: bag mockups sent, waiting on printer quote, menu board drafts Thursday.",
+        "Same format as my Fernwood one — done / next / need from you."
+      ]
+    },
+    {
+      "id": "chat_04",
+      "at": "2026-11-03T17:10:00Z",
+      "title": "Invoice reminder Oakline",
+      "user_turns": [
+        "Write a friendly reminder that invoice 1042 is 10 days overdue."
+      ]
+    },
+    {
+      "id": "chat_05",
+      "at": "2026-11-03T21:00:00Z",
+      "title": "Moodboard captions",
+      "user_turns": [
+        "Write short captions for 8 moodboard images for the Fernwood deck."
+      ]
+    },
+    {
+      "id": "chat_06",
+      "at": "2026-11-04T17:20:00Z",
+      "title": "Discovery questions — Harbor Yoga",
+      "user_turns": [
+        "Give me 10 discovery questions for a yoga studio rebrand call with Jess."
+      ]
+    },
+    {
+      "id": "chat_07",
+      "at": "2026-11-05T22:15:00Z",
+      "title": "Fernwood status — week of Nov 2",
+      "user_turns": [
+        "Weekly status for Leo again. Notes: color system done, type pairing chosen, photo assets still missing (now blocking), review moved to Nov 12.",
+        "Too long — cut to 5 bullets and put the blocker first."
+      ]
+    },
+    {
+      "id": "chat_08",
+      "at": "2026-11-05T23:00:00Z",
+      "title": "Pricing a brand audit",
+      "user_turns": [
+        "What should I charge for a one-week brand audit for a small tea company?"
+      ]
+    },
+    {
+      "id": "chat_09",
+      "at": "2026-11-09T16:30:00Z",
+      "title": "Oakline weekly status",
+      "user_turns": [
+        "Status for Mia: printer quote in, approved bag v2, menu boards delivered, need sign-off on cup sleeve by Thu.",
+        "Use the done / next / need format."
+      ]
+    },
+    {
+      "id": "chat_10",
+      "at": "2026-11-10T18:00:00Z",
+      "title": "Proposal outline — Juniper Tea",
+      "user_turns": [
+        "Outline a proposal for Owen at Juniper Tea: brand refresh plus packaging, 6 weeks."
+      ]
+    },
+    {
+      "id": "chat_11",
+      "at": "2026-11-10T20:45:00Z",
+      "title": "Invoice reminder — Fernwood milestone 2",
+      "user_turns": [
+        "Polite nudge to Fernwood accounts: milestone 2 invoice due Friday."
+      ]
+    },
+    {
+      "id": "chat_12",
+      "at": "2026-11-11T17:30:00Z",
+      "title": "Type pairing ideas",
+      "user_turns": [
+        "Suggest 3 serif + sans pairings for a coffee brand that feels warm but modern."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "tz": "America/New_York",
+  "events": [
+    {"id": "evt_m02_globex_qbr", "title": "Globex expansion QBR", "start": "2026-11-12T15:00:00Z", "end": "2026-11-12T16:00:00Z",
+     "attendees": [
+       {"email": "tom.becker@globex.example", "name": "Tom Becker", "response": "declined"},
+       {"email": "maya@northwind.example", "name": "Maya Chen", "response": "accepted"},
+       {"email": "sam@northwind.example", "name": "Sam Ortiz", "response": "accepted"}],
+     "organizer": "tom.becker@globex.example", "description": "Usage review and expansion seats.", "status": "cancelled", "recurring": false},
+    {"id": "evt_m02_lead", "title": "Leadership sync", "start": "2026-11-12T16:00:00Z", "end": "2026-11-12T16:45:00Z",
+     "attendees": [
+       {"email": "dana@northwind.example", "name": "Dana Whitfield", "response": "accepted"},
+       {"email": "maya@northwind.example", "name": "Maya Chen", "response": "accepted"}],
+     "organizer": "dana@northwind.example", "description": "Weekly.", "status": "confirmed", "recurring": true}
+  ]
+}

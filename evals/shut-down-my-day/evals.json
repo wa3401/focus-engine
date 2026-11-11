@@ -1,0 +1,107 @@
+{
+  "skill_name": "shut-down-my-day",
+  "evals": [
+    {
+      "id": "sdd-01-replies-and-ack",
+      "name": "Replies detected; acknowledgment becomes a commitment",
+      "tests": "Accuracy",
+      "smoke": true,
+      "prompt": "It's the 5:00pm scheduled run. Produce today's shutdown.",
+      "files": [
+        "evals/fixtures/sdd-01-replies-and-ack/"
+      ],
+      "expected_output": "Done today: 2 (the Acme discount approval and Lena's Globex plan comments). Raj's Q4 numbers request, answered only with 'on it', appears as a new commitment to Raj due Fri Nov 13 noon. Write-back marks L-0310 and L-0311 done and records L-0312 as an open commitment.",
+      "expectations": [
+        "'Done today' shows 2 items: the Acme 8% discount approval (L-0310) and the Globex mutual action plan comments (L-0311)",
+        "Raj's Q4 numbers request (L-0312) is not counted as done; it appears as a commitment to Raj Mehta due Friday Nov 13 (noon)",
+        "The write-back marks L-0310 and L-0311 done (directly or as appended status events)",
+        "The write-back records L-0312 (or a new entry keyed slack:C_LEAD/1794443400.000100) as kind commitment, still open, due 2026-11-13T17:00:00Z",
+        "Neither L-0310 nor L-0311 appears under 'Still open'"
+      ]
+    },
+    {
+      "id": "sdd-02-sent-email-commitment",
+      "name": "Commitment captured from a sent email",
+      "tests": "Accuracy",
+      "prompt": "It's the 5:00pm scheduled run. Produce today's shutdown.",
+      "files": [
+        "evals/fixtures/sdd-02-sent-email-commitment/"
+      ],
+      "expected_output": "New commitments lists 'send the deck (revised seat tiers, rollout timeline) → Tom Becker by Fri Nov 13', with a matching commitment ledger entry keyed gmail:18f4b1d7. Tom's promise to return the order form is not listed as Maya's commitment.",
+      "expectations": [
+        "'New commitments' includes sending the deck to Tom Becker, due Friday Nov 13",
+        "The write-back adds a ledger entry with kind commitment, who including Tom Becker, key gmail:18f4b1d7, and a due date on 2026-11-13",
+        "Tom's promise to return the signed order form Monday is not listed as one of Maya's commitments (it may appear as a waiting-on)",
+        "The new ledger entry's summary is at most 15 words and contains no quoted email text"
+      ]
+    },
+    {
+      "id": "sdd-03-interactive-reply",
+      "name": "Interactive reply applied",
+      "tests": "Feedback",
+      "prompt": "Maya replied to tonight's shutdown (see deliveries/). Apply her reply: confirm in the thread what you changed, write back to the Profile, and give the exact 'Applied' line tomorrow morning's brief should open with.",
+      "files": [
+        "evals/fixtures/sdd-03-interactive-reply/"
+      ],
+      "expected_output": "L-0316 marked done; L-0317 snoozed to Mon Nov 16; tomorrow's top 3 becomes [L-0290, L-0320, L-0280]; a one-line confirmation in the thread and an Applied line naming all three changes.",
+      "expectations": [
+        "The write-back marks L-0316 (Lena's Globex discount) done",
+        "The write-back sets L-0317 (Raj's CRM fields) to snoozed with snoozed_until on 2026-11-16 (Monday, ET)",
+        "Tomorrow's top 3 becomes: 1) Acme security questionnaire (L-0290), 2) AE finalist scorecards (L-0320), 3) Partner program one-pager (L-0280)",
+        "The output gives an 'Applied' line for tomorrow's brief that names all three changes (2 done, 4 snoozed to Mon, top-3 #2 swapped for hiring)",
+        "No other ledger status changes: L-0290, L-0280 and L-0305 stay open/surfaced (L-0305 is not dismissed)"
+      ]
+    },
+    {
+      "id": "sdd-04-skipped-shutdowns",
+      "name": "Skipped shutdowns: no pile-up, one gentle line",
+      "tests": "Tone",
+      "prompt": "It's the 5:00pm scheduled run. Produce today's shutdown.",
+      "files": [
+        "evals/fixtures/sdd-04-skipped-shutdowns/"
+      ],
+      "expected_output": "A normal single shutdown for Thu Nov 12 reflecting the current state (Priya's call times and Sam's travel are done; Jordan's shortlist arrived), with exactly one gentle line asking whether to change the shutdown time or turn it off.",
+      "expectations": [
+        "Exactly one line asks whether to change the shutdown time or turn it off; no other mention of the skipped days",
+        "The shutdown covers today only: no separate sections, lists or recaps for Mon Nov 9, Tue Nov 10 or Wed Nov 11",
+        "L-0293 (Priya's call times) and L-0294 (Sam's travel) are not under 'Still open', and the write-back marks both done",
+        "No item appears more than once under 'Still open'",
+        "The write-back sets last_run for shut-down-my-day to 2026-11-12"
+      ]
+    },
+    {
+      "id": "sdd-05-focus-block-conflict",
+      "name": "No focus time before a P1 deadline",
+      "tests": "Judgment",
+      "prompt": "It's the 4:30pm scheduled run. Produce today's shutdown.",
+      "files": [
+        "evals/fixtures/sdd-05-focus-block-conflict/"
+      ],
+      "expected_output": "The shutdown notes that Thursday Nov 12 has no free 90-minute block before the Fri 5pm grant narrative deadline (priority 1), proposes one specific block (e.g. Fri 9:00–10:30, before the 1pm board finance committee), and asks for Darnell's OK without booking anything.",
+      "expectations": [
+        "States that tomorrow (Thu Nov 12) has no free 90-minute focus block",
+        "Ties the conflict to the grant narrative for Angela (L-0107) due Friday Nov 13 at 5pm",
+        "Proposes one specific block with a day and start–end time that is at least 90 minutes, within 9:00–17:00 ET, before Fri 5pm, and overlaps no existing event (e.g. Fri 9:00–10:30), or names a specific Thursday meeting to move",
+        "Does not say it booked, created, moved or declined any calendar event; it asks Darnell to confirm",
+        "Kim's tutor schedule approval (L-0104) is counted as done today"
+      ]
+    },
+    {
+      "id": "sdd-06-passive-email",
+      "name": "Passive shutdown by email",
+      "tests": "Format",
+      "prompt": "It's the 5:00pm scheduled run. Produce today's shutdown.",
+      "files": [
+        "evals/fixtures/sdd-06-passive-email/"
+      ],
+      "expected_output": "A one-screen email (with a subject) summarizing done today (Priya's call times), still-open items, the new commitment to Raj (partner terms outline by Tue Nov 17), and tomorrow's top 3 — with no questions that need a reply, and ending with the reply-to-correct line.",
+      "expectations": [
+        "The output is an email with a Subject line",
+        "The body (excluding PROFILE WRITE-BACK) is at most 25 lines",
+        "No still-open item asks 'carry / snooze / drop?' and there is no question asking for meeting outcomes or any other reply",
+        "Ends with a reply-to-correct line like 'Reply to this email with changes, e.g. done 2, snooze 4 to Fri'",
+        "'New commitments' includes the partner terms outline → Raj Mehta by Tue Nov 17"
+      ]
+    }
+  ]
+}

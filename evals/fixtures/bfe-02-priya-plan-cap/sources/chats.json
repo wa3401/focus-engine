@@ -1,0 +1,17 @@
+{
+  "memory": [
+    "Priya Raman runs Raman Studio, a solo brand consultancy.",
+    "Priya lives in Denver and takes Fridays off.",
+    "Priya's biggest project is the Fernwood rebrand, due Dec 6; her contact there is Leo Grant.",
+    "Priya also works with Oakline Coffee (Mia Sato).",
+    "Priya wants to sign two new retainers for Q1."
+  ],
+  "chats": [
+    {"id": "chat_p101", "at": "2026-10-28T17:00:00Z", "title": "Protecting focus time",
+     "user_turns": ["I keep losing my deep work afternoons to client calls, I want at least 3 deep blocks a week"]},
+    {"id": "chat_p102", "at": "2026-10-30T16:30:00Z", "title": "Nudge my accountant",
+     "user_turns": ["Draft a polite nudge to Hal Brennan, my accountant, about my estimated taxes"]},
+    {"id": "chat_p103", "at": "2026-11-01T15:00:00Z", "title": "Inbox clutter",
+     "user_turns": ["Dribbble digests and LinkedIn notifications are burying client emails"]}
+  ]
+}

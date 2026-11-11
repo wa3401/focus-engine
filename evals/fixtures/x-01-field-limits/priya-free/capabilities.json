@@ -1,0 +1,10 @@
+{
+  "tool": "ChatGPT", "plan": "Free", "account": "personal",
+  "schedule": true, "max_scheduled_tasks": 3, "existing_scheduled_tasks": [], "schedule_exact_times": false,
+  "connectors": ["gmail", "gcal", "gdrive"],
+  "connectors_in_schedule": true, "write_profile": false, "doc_tool": "Google Docs",
+  "send_email": false, "send_chat": false, "subagents": false, "past_chat_search": true,
+  "custom_gpts": false, "project_files_in_tasks": false,
+  "admin_blocks": [],
+  "field_limits": {"custom_instructions": 1500, "task_prompt": null, "project_instructions": null}
+}

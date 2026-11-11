@@ -1,0 +1,60 @@
+{
+  "tz": "America/New_York",
+  "events": [
+    {
+      "id": "evt_globex_exp",
+      "title": "Globex expansion call",
+      "start": "2026-11-12T20:30:00Z",
+      "end": "2026-11-12T21:15:00Z",
+      "attendees": [
+        {
+          "email": "maya@northwind.example",
+          "name": "Maya Chen",
+          "response": "accepted"
+        },
+        {
+          "email": "tom.becker@globex.example",
+          "name": "Tom Becker",
+          "response": "accepted"
+        },
+        {
+          "email": "nina.patel@globex.example",
+          "name": "Nina Patel",
+          "response": "accepted"
+        },
+        {
+          "email": "lena@northwind.example",
+          "name": "Lena Park",
+          "response": "accepted"
+        }
+      ],
+      "organizer": "tom.becker@globex.example",
+      "description": "Seat tiers, procurement steps, and timing for a Q4 signature.",
+      "status": "confirmed",
+      "recurring": false,
+      "updated": "2026-11-12T17:42:00Z"
+    },
+    {
+      "id": "evt_1on1_lena_1112",
+      "title": "Maya / Lena 1:1",
+      "start": "2026-11-12T22:00:00Z",
+      "end": "2026-11-12T22:30:00Z",
+      "attendees": [
+        {
+          "email": "maya@northwind.example",
+          "name": "Maya Chen",
+          "response": "accepted"
+        },
+        {
+          "email": "lena@northwind.example",
+          "name": "Lena Park",
+          "response": "accepted"
+        }
+      ],
+      "organizer": "maya@northwind.example",
+      "description": "",
+      "status": "confirmed",
+      "recurring": true
+    }
+  ]
+}

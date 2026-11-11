@@ -1,0 +1,18 @@
+{
+  "user": {"id": "U_MAYA", "name": "Maya Chen"},
+  "channels": [
+    {"id": "C_LEAD", "name": "leadership"},
+    {"id": "C_DEALS", "name": "deals"},
+    {"id": "D_BRIEF", "name": "DM: brief app"}
+  ],
+  "messages": [
+    {"id": "C_LEAD/1794340800.000100", "channel": "C_LEAD", "ts": "2026-11-10T20:00:00Z",
+     "from": "U_RAJ", "from_name": "Raj Mehta",
+     "text": "@Maya the Q4 commission plan is ready for your approval. Payroll needs it by Thursday 5pm.",
+     "thread_of": null, "reactions": []},
+    {"id": "C_DEALS/1794427320.000100", "channel": "C_DEALS", "ts": "2026-11-11T20:02:00Z",
+     "from": "U_LENA", "from_name": "Lena Park",
+     "text": "Wayfarer kickoff is booked for next Tuesday.",
+     "thread_of": null, "reactions": []}
+  ]
+}

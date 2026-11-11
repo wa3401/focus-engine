@@ -1,0 +1,20 @@
+{
+  "note": "Public web results for people new to Maya. Only these pages exist; a search that returns nothing has an empty results list.",
+  "searches": [
+    {
+      "query": "Erin Vasquez Hollis Group",
+      "results": [
+        {
+          "url": "https://www.hollis.example/team/erin-vasquez",
+          "title": "Erin Vasquez — VP, Partnerships | Hollis Group",
+          "fetched_at": "2026-11-11T17:55:00Z",
+          "text": "Erin Vasquez is Vice President of Partnerships at Hollis Group, where she runs the firm's technology alliances with analytics vendors. She joined Hollis in 2023 after eight years at Brightline Data, where she built its reseller program. She is based in Chicago."
+        }
+      ]
+    },
+    {
+      "query": "Marco Diaz Hollis Group",
+      "results": []
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "user": "maya@northwind.example",
+  "threads": [
+    {
+      "id": "18f2b7e4",
+      "subject": "Acme security questionnaire",
+      "labels": [
+        "INBOX"
+      ],
+      "messages": [
+        {
+          "from": "priya.shah@acme.example",
+          "to": [
+            "maya@northwind.example"
+          ],
+          "at": "2026-11-10T15:20:00Z",
+          "body": "Hi Maya — our security team needs the questionnaire answers before we can move to signature. Could you get them to me by Friday?"
+        },
+        {
+          "from": "maya@northwind.example",
+          "to": [
+            "priya.shah@acme.example"
+          ],
+          "at": "2026-11-10T16:02:00Z",
+          "body": "Yes — I'll have the answers to you by Friday end of day."
+        }
+      ]
+    },
+    {
+      "id": "18f2d011",
+      "subject": "Forecast sheet ready for Thursday",
+      "labels": [
+        "INBOX"
+      ],
+      "messages": [
+        {
+          "from": "raj@northwind.example",
+          "to": [
+            "maya@northwind.example",
+            "dana@northwind.example"
+          ],
+          "at": "2026-11-11T21:10:00Z",
+          "body": "Forecast sheet is updated through Wednesday. Commit is light on Globex — worth talking through."
+        }
+      ]
+    }
+  ]
+}

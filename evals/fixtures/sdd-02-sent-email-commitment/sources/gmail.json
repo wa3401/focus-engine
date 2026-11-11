@@ -1,0 +1,72 @@
+{
+  "user": "maya@northwind.example",
+  "threads": [
+    {
+      "id": "18f4b1d7",
+      "subject": "Re: Globex expansion — next steps",
+      "labels": [
+        "INBOX",
+        "SENT"
+      ],
+      "messages": [
+        {
+          "from": "tom.becker@globex.example",
+          "to": [
+            "maya@northwind.example"
+          ],
+          "cc": [
+            "lena@northwind.example"
+          ],
+          "at": "2026-11-12T18:30:00Z",
+          "body": "Good call today. I'll get the signed order form back from procurement to you Monday. Could you send over the deck you walked us through?"
+        },
+        {
+          "from": "maya@northwind.example",
+          "to": [
+            "tom.becker@globex.example"
+          ],
+          "cc": [
+            "lena@northwind.example"
+          ],
+          "at": "2026-11-12T19:12:00Z",
+          "body": "Thanks Tom — great call. I'll send the deck Friday, with the revised seat tiers and the rollout timeline we discussed."
+        }
+      ]
+    },
+    {
+      "id": "18f4b3e2",
+      "subject": "Acme usage report",
+      "labels": [
+        "SENT"
+      ],
+      "messages": [
+        {
+          "from": "maya@northwind.example",
+          "to": [
+            "sam@northwind.example"
+          ],
+          "at": "2026-11-12T20:00:00Z",
+          "body": "Sam, can you send me the Acme usage report tomorrow morning? I want it before I finish the questionnaire."
+        }
+      ]
+    },
+    {
+      "id": "18f4a611",
+      "subject": "Webinar: 10 pipeline hacks",
+      "labels": [
+        "INBOX",
+        "CATEGORY_PROMOTIONS"
+      ],
+      "messages": [
+        {
+          "from": "events@salesvendor.example",
+          "to": [
+            "maya@northwind.example"
+          ],
+          "at": "2026-11-12T16:00:00Z",
+          "body": "Join us next week…"
+        }
+      ]
+    }
+  ]
+}

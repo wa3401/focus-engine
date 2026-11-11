@@ -1,0 +1,47 @@
+{
+  "user": "maya@northwind.example",
+  "threads": [
+    {
+      "id": "18f3a9c2",
+      "subject": "Globex expansion — proposal timing",
+      "labels": [
+        "INBOX"
+      ],
+      "messages": [
+        {
+          "from": "tom.becker@globex.example",
+          "to": [
+            "maya@northwind.example"
+          ],
+          "at": "2026-11-09T16:30:00Z",
+          "body": "Maya — when can we expect the expansion proposal? I'd like it before our budget meeting next week."
+        },
+        {
+          "from": "maya@northwind.example",
+          "to": [
+            "tom.becker@globex.example"
+          ],
+          "at": "2026-11-09T17:12:00Z",
+          "body": "Tom — you'll have it by Friday the 13th, with revised seat tiers once we've talked scope on Tuesday."
+        }
+      ]
+    },
+    {
+      "id": "18f19d55",
+      "subject": "Procurement contact",
+      "labels": [
+        "INBOX"
+      ],
+      "messages": [
+        {
+          "from": "tom.becker@globex.example",
+          "to": [
+            "maya@northwind.example"
+          ],
+          "at": "2026-11-09T14:05:00Z",
+          "body": "Nina Patel in procurement will own the paperwork. Looping her in when we get there."
+        }
+      ]
+    }
+  ]
+}

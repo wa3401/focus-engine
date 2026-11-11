@@ -1,0 +1,27 @@
+{
+  "user": {"id": "U_MAYA", "name": "Maya Chen"},
+  "channels": [
+    {"id": "C_DEALS", "name": "deals"},
+    {"id": "C_LEAD", "name": "leadership"},
+    {"id": "D_DANA", "name": "DM: Dana Whitfield"},
+    {"id": "D_BRIEF", "name": "DM: brief app"}
+  ],
+  "messages": [
+    {"id": "C_DEALS/1794344400.000100", "channel": "C_DEALS", "ts": "2026-11-10T21:00:00Z",
+     "from": "U_SAM", "from_name": "Sam Ortiz",
+     "text": "@Maya Globex wants the expansion priced at tier 2 instead of tier 3. Can I quote them tier 2 at the Q4 rate? Need to send by Thursday.",
+     "thread_of": null, "reactions": []},
+    {"id": "C_DEALS/1794409800.000100", "channel": "C_DEALS", "ts": "2026-11-11T15:10:00Z",
+     "from": "U_MAYA", "from_name": "Maya Chen",
+     "text": "Approved, go with tier 2 at the Q4 rate. Loop me on the quote.",
+     "thread_of": "C_DEALS/1794344400.000100", "reactions": [{"name": "thumbsup", "users": ["U_SAM"]}]},
+    {"id": "D_DANA/1794352500.000100", "channel": "D_DANA", "ts": "2026-11-10T23:15:00Z",
+     "from": "U_DANA", "from_name": "Dana Whitfield",
+     "text": "Can you get me pipeline coverage and win rate for the board slides by Thursday?",
+     "thread_of": null, "reactions": []},
+    {"id": "C_DEALS/1794432600.000100", "channel": "C_DEALS", "ts": "2026-11-11T21:30:00Z",
+     "from": "U_LENA", "from_name": "Lena Park",
+     "text": "@Maya can you join the Wayfarer partner call Friday at 2pm? They asked for someone senior. A yes or no by Thursday is fine.",
+     "thread_of": null, "reactions": []}
+  ]
+}

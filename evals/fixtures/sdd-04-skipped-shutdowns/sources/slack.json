@@ -1,0 +1,50 @@
+{
+  "user": {
+    "id": "U_ME",
+    "name": "Maya Chen"
+  },
+  "channels": [
+    {
+      "id": "C_DEALS",
+      "name": "deals"
+    },
+    {
+      "id": "C_LEAD",
+      "name": "leadership"
+    },
+    {
+      "id": "D_LENA",
+      "name": "Lena Park (DM)"
+    },
+    {
+      "id": "D_SAM",
+      "name": "Sam Ortiz (DM)"
+    },
+    {
+      "id": "D_FOCUS",
+      "name": "focus-engine (DM)"
+    }
+  ],
+  "messages": [
+    {
+      "id": "D_SAM/1794240600.000100",
+      "channel": "D_SAM",
+      "ts": "2026-11-09T16:10:00Z",
+      "from": "U_SAM",
+      "from_name": "Sam Ortiz",
+      "text": "Can you approve my travel for the Globex onsite on the 19th?",
+      "thread_of": null,
+      "reactions": []
+    },
+    {
+      "id": "D_SAM/1794405720.000100",
+      "channel": "D_SAM",
+      "ts": "2026-11-11T14:02:00Z",
+      "from": "U_ME",
+      "from_name": "Maya Chen",
+      "text": "Approved — book it.",
+      "thread_of": "D_SAM/1794240600.000100",
+      "reactions": []
+    }
+  ]
+}

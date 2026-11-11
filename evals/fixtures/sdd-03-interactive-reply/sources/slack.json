@@ -1,0 +1,50 @@
+{
+  "user": {
+    "id": "U_ME",
+    "name": "Maya Chen"
+  },
+  "channels": [
+    {
+      "id": "C_DEALS",
+      "name": "deals"
+    },
+    {
+      "id": "C_LEAD",
+      "name": "leadership"
+    },
+    {
+      "id": "D_LENA",
+      "name": "Lena Park (DM)"
+    },
+    {
+      "id": "D_SAM",
+      "name": "Sam Ortiz (DM)"
+    },
+    {
+      "id": "D_FOCUS",
+      "name": "focus-engine (DM)"
+    }
+  ],
+  "messages": [
+    {
+      "id": "D_LENA/1794507600.000100",
+      "channel": "D_LENA",
+      "ts": "2026-11-12T18:20:00Z",
+      "from": "U_LENA",
+      "from_name": "Lena Park",
+      "text": "Globex is asking for 5% off if they add the second region. OK with you?",
+      "thread_of": null,
+      "reactions": []
+    },
+    {
+      "id": "C_LEAD/1794495600.000100",
+      "channel": "C_LEAD",
+      "ts": "2026-11-12T15:00:00Z",
+      "from": "U_RAJ",
+      "from_name": "Raj Mehta",
+      "text": "Maya — which CRM fields can we retire in the cleanup? Need your list.",
+      "thread_of": null,
+      "reactions": []
+    }
+  ]
+}

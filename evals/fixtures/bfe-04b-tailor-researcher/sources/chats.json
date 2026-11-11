@@ -1,0 +1,15 @@
+{
+  "memory": [
+    "Dr. Ines Okafor is a computational biologist and principal investigator at the Halden Institute (halden.example).",
+    "Ines runs a small lab: two postdocs (Kwame Asante, Lucia Ferraro) and one PhD student (Tomas Reyes).",
+    "Ines does deep work from 8:00 to 12:00 every weekday and does not read email before noon.",
+    "Ines lives in Seattle (Pacific time).",
+    "Ines is writing an R01 resubmission due Feb 5 and a Nature Methods revision due Dec 18."
+  ],
+  "chats": [
+    {"id": "chat_i301", "at": "2026-10-22T20:00:00Z", "title": "Reviewer 2 response",
+     "user_turns": ["Help me respond to reviewer 2 on the Nature Methods revision"]},
+    {"id": "chat_i302", "at": "2026-10-30T21:10:00Z", "title": "Email overload",
+     "user_turns": ["I get conference spam, journal table-of-contents alerts and vendor emails from reagent companies all day. I only want things from my lab, co-authors, the program officer and journal editors."]}
+  ]
+}

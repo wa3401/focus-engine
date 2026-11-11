@@ -1,0 +1,16 @@
+{
+  "tool": "Claude", "plan": "Enterprise", "account": "work (admin-managed)",
+  "schedule": true, "max_scheduled_tasks": null,
+  "cloud_runs": false,
+  "connectors": ["gmail", "gcal", "gdrive", "slack"],
+  "connectors_in_schedule": true,
+  "write_profile": "needs_approval_each_task", "doc_tool": "Google Docs",
+  "send_email": false, "send_chat": "needs_approval_each_task",
+  "subagents": false, "past_chat_search": true, "user_skills": true,
+  "admin_blocks": [
+    {"setting": "Run Cowork in the cloud", "state": "off", "effect": "scheduled tasks run only while Owen's laptop is awake and the app is open"},
+    {"setting": "Allow 'Always allow' for connector tools", "state": "off", "effect": "writing the Profile doc and sending a Slack DM need approval in every task"}
+  ],
+  "admin_contact": {"name": "Rachel Moss", "role": "IT systems lead", "email": "rachel.moss@halcyon.example"},
+  "field_limits": {}
+}

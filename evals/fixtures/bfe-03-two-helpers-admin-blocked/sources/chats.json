@@ -1,0 +1,14 @@
+{
+  "memory": [
+    "Owen Grady is Director of Customer Success at Halcyon Freight (halcyon.example), a logistics software company.",
+    "Owen manages four CSMs and owns renewals for the top 30 accounts.",
+    "Owen works in Chicago, 8:00 to 5:00 weekdays.",
+    "Owen's manager is Carla Diaz, COO."
+  ],
+  "chats": [
+    {"id": "chat_o201", "at": "2026-11-02T15:00:00Z", "title": "Q4 churn risk list",
+     "user_turns": ["Help me rank churn risk for Brightpath and Keystone Freight, both renew in January"]},
+    {"id": "chat_o202", "at": "2026-11-05T19:00:00Z", "title": "Meeting overload",
+     "user_turns": ["I don't need prep for my meetings, I know my accounts. I just need to know what's on fire in the morning and close the day cleanly."]}
+  ]
+}

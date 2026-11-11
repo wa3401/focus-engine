@@ -1,0 +1,106 @@
+{
+  "skill_name": "hand-off-my-busywork",
+  "evals": [
+    {
+      "id": "hob-01-status-report-repeat",
+      "name": "Weekly client status report found from chat history",
+      "tests": "Accuracy",
+      "prompt": "Priya says: \"audit my busywork\".",
+      "files": [
+        "evals/fixtures/hob-01-status-report-repeat/"
+      ],
+      "expected_output": "The top hand-off is the weekly client status email (Fernwood and Oakline), citing chat_01, chat_03, chat_07 and chat_09 (with chat_07 as a fix loop), recommended as a saved prompt or a scheduled task, ending with 'pick one'.",
+      "expectations": [
+        "The #1 hand-off is the weekly client status report/email",
+        "Its evidence cites all four chats chat_01, chat_03, chat_07, chat_09 (by ID, or by date and title)",
+        "The recommended form for it is a saved prompt or a scheduled task",
+        "No hand-off cites a chat ID that is not in chats.json, and invoice reminders are cited with at most 2 instances (chat_04, chat_11)",
+        "It asks Priya to pick before building, and no decision-log row is added in the write-back or Profile updates block"
+      ]
+    },
+    {
+      "id": "hob-02-new-user-walkthrough",
+      "name": "No history: week walkthrough and starter hand-offs",
+      "tests": "Adaptivity",
+      "prompt": "Darnell says: \"what should I hand off?\"",
+      "files": [
+        "evals/fixtures/hob-02-new-user-walkthrough/"
+      ],
+      "expected_output": "Because there are no past chats, the audit asks Darnell for a short walkthrough of his last two weeks, then suggests 3 starter hand-offs drawn from his answers (e.g. weekly board-chair update, meeting notes → action list, donor thank-you drafts), with risky ones held to Delegated, and asks him to pick.",
+      "expectations": [
+        "Before ranking anything, it asks Darnell walkthrough questions about his last two weeks (instead of citing past chats)",
+        "It presents exactly 3 starter hand-offs",
+        "Each hand-off traces to something Darnell said in the walkthrough (board chair update, meeting notes to actions, donor thank-yous, grant report numbers, or volunteer scheduling)",
+        "It cites no past chat IDs or chat titles",
+        "Nothing involving donor letters or grant/funder numbers is tagged Automated"
+      ]
+    },
+    {
+      "id": "hob-03-risky-pricing-emails",
+      "name": "Frequent but risky: client pricing emails",
+      "tests": "Judgment",
+      "prompt": "It's the scheduled audit (every other Friday). Run it.",
+      "files": [
+        "evals/fixtures/hob-03-risky-pricing-emails/"
+      ],
+      "expected_output": "Client pricing emails are found as a frequent repeat (6 chats, including two fix-loop corrections) but tagged Delegated (AI drafts, Maya checks) or Just me — never Automated — with the risk explained (money, client-facing, hard to reverse, discount authority).",
+      "expectations": [
+        "Client pricing emails are identified as a repeat, citing at least 4 of: chat_02, chat_04, chat_07, chat_09, chat_12, chat_14",
+        "The pricing-email hand-off is tagged Delegated or Just me, and is not tagged Automated anywhere in the output",
+        "The output explains the risk in words such as error cost, money/pricing, client-facing, irreversible once sent, or discount authority",
+        "It does not propose a scheduled task or any form that sends pricing emails without Maya reviewing them first"
+      ]
+    },
+    {
+      "id": "hob-04-follow-through",
+      "name": "Second cycle: actual vs. estimate, no re-recommend",
+      "tests": "Follow-through",
+      "prompt": "It's the scheduled audit (every other Friday). Run it.",
+      "files": [
+        "evals/fixtures/hob-04-follow-through/"
+      ],
+      "expected_output": "A follow-through line for the 'Call notes → HubSpot' saved prompt: used 6 times in two weeks (chat_02, 04, 06, 08, 11, 13) vs. the 45 min/month estimate (about 13 uses/month ≈ 65 min/month); it is not re-recommended; the decision log's Actual column is filled in.",
+      "expectations": [
+        "Reports that the 'Call notes → HubSpot' saved prompt was used 6 times in the last two weeks",
+        "Compares that against the 45 min/month estimate, giving an actual minutes-per-month figure",
+        "The call-notes hand-off is not among the top 3 recommendations",
+        "The write-back fills the Actual column of the 2026-10-30 decision-log row",
+        "AE candidate outreach appears as a recommendation citing chat_05, chat_09 and chat_12"
+      ]
+    },
+    {
+      "id": "hob-05-tune-ups",
+      "name": "Tune-ups proposed from two weeks of feedback",
+      "tests": "Learning loop",
+      "prompt": "It's the scheduled audit (every other Friday). Run it.",
+      "files": [
+        "evals/fixtures/hob-05-tune-ups/"
+      ],
+      "expected_output": "Three tune-up proposals, each citing its events and asking for approval: remove/fold FYI from the brief (6 'less like this'), add a sent-folder / already-replied check for email (2 verifier misses: L-0262, L-0279), and move the brief to 8:15 (moved 4 times). Nothing is applied yet.",
+      "expectations": [
+        "Proposes removing or muting the FYI section of the brief, citing that it was marked not useful 6 times",
+        "Proposes an email verification change (e.g. check sent mail / already-replied before calling a thread open), citing the 2 verifier misses",
+        "Proposes moving the morning brief to 8:15 (or a later default time), citing the 4 times it was moved",
+        "Asks Maya to approve before applying; the write-back neither changes my-smart-assistant's Helper settings row nor adds a noise_rule or setting event marked applied",
+        "Proposes no more than 3 helper tune-ups in total"
+      ]
+    },
+    {
+      "id": "hob-06-audit-as-doc",
+      "name": "Audit delivered as a one-page doc",
+      "tests": "Format",
+      "prompt": "Maya says: \"Do my busywork audit, but give it to me as a one-page doc I can keep in Drive.\"",
+      "files": [
+        "evals/fixtures/hob-06-audit-as-doc/"
+      ],
+      "expected_output": "A one-page document: a title, a ranked table of hand-offs (rank, hand-off, est. min/month, tag, form, evidence), and a build plan for the one Maya picks (#1), plus a decision-log row for it in the write-back.",
+      "expectations": [
+        "The output starts with a document title (a heading naming the busywork audit and/or the date)",
+        "It contains a ranked table with columns for rank, hand-off, estimated minutes per month, tag (Just me/Delegated/Automated) and form",
+        "It contains a build plan section for the picked hand-off",
+        "The write-back adds a decision-log row dated 2026-11-13 for the #1 hand-off, with its form and estimated min/month",
+        "Every hand-off in the table cites chat IDs or dates that exist in chats.json"
+      ]
+    }
+  ]
+}

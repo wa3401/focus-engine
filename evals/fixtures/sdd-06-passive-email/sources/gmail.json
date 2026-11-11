@@ -1,0 +1,48 @@
+{
+  "user": "maya@northwind.example",
+  "threads": [
+    {
+      "id": "18f2c0aa",
+      "subject": "Renewal signature call",
+      "labels": [
+        "INBOX",
+        "SENT"
+      ],
+      "messages": [
+        {
+          "from": "priya.shah@acme.example",
+          "to": [
+            "maya@northwind.example"
+          ],
+          "at": "2026-11-11T14:20:00Z",
+          "body": "Could you send a few times for a signature call next week?"
+        },
+        {
+          "from": "maya@northwind.example",
+          "to": [
+            "priya.shah@acme.example"
+          ],
+          "at": "2026-11-12T15:30:00Z",
+          "body": "Tue 11/17 at 10 or 2, or Wed 11/18 at 11?"
+        }
+      ]
+    },
+    {
+      "id": "18f4e0b5",
+      "subject": "Partner program — legal review",
+      "labels": [
+        "SENT"
+      ],
+      "messages": [
+        {
+          "from": "maya@northwind.example",
+          "to": [
+            "raj@northwind.example"
+          ],
+          "at": "2026-11-12T20:40:00Z",
+          "body": "I'll get you the partner terms outline by Tuesday."
+        }
+      ]
+    }
+  ]
+}

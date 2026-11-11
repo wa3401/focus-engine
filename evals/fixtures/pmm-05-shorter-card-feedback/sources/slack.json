@@ -1,0 +1,21 @@
+{
+  "user": {
+    "id": "U_ME",
+    "name": "Maya Chen"
+  },
+  "channels": [
+    {
+      "id": "C_DEALS",
+      "name": "deals"
+    },
+    {
+      "id": "C_LEAD",
+      "name": "leadership"
+    },
+    {
+      "id": "D_FOCUS",
+      "name": "focus-engine (DM)"
+    }
+  ],
+  "messages": []
+}

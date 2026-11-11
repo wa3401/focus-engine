@@ -1,0 +1,54 @@
+{
+  "tz": "America/New_York",
+  "events": [
+    {
+      "id": "evt_globex_scope",
+      "title": "Globex expansion — scope review",
+      "start": "2026-11-10T19:00:00Z",
+      "end": "2026-11-10T19:45:00Z",
+      "attendees": [
+        {
+          "email": "maya@northwind.example",
+          "name": "Maya Chen",
+          "response": "accepted"
+        },
+        {
+          "email": "tom.becker@globex.example",
+          "name": "Tom Becker",
+          "response": "accepted"
+        },
+        {
+          "email": "lena@northwind.example",
+          "name": "Lena Park",
+          "response": "accepted"
+        }
+      ],
+      "organizer": "tom.becker@globex.example",
+      "description": "Walk through expansion scope and seat counts before the proposal.",
+      "status": "confirmed",
+      "recurring": false
+    },
+    {
+      "id": "evt_1on1_sam_1110",
+      "title": "Maya / Sam 1:1",
+      "start": "2026-11-10T21:00:00Z",
+      "end": "2026-11-10T21:30:00Z",
+      "attendees": [
+        {
+          "email": "maya@northwind.example",
+          "name": "Maya Chen",
+          "response": "accepted"
+        },
+        {
+          "email": "sam@northwind.example",
+          "name": "Sam Ortiz",
+          "response": "accepted"
+        }
+      ],
+      "organizer": "maya@northwind.example",
+      "description": "",
+      "status": "confirmed",
+      "recurring": true
+    }
+  ]
+}

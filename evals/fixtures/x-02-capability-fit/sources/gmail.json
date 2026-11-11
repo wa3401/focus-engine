@@ -1,0 +1,30 @@
+{
+  "user": "priya@ramanstudio.example",
+  "threads": [
+    {"id": "19b0a001", "subject": "Fernwood — print vendor quote", "labels": ["INBOX", "SENT"],
+     "messages": [
+       {"from": "leo@fernwood.example", "to": ["priya@ramanstudio.example"], "at": "2026-11-10T20:30:00Z", "body": "Priya, can you approve the print vendor quote today so we hold the press slot? Leo"},
+       {"from": "priya@ramanstudio.example", "to": ["leo@fernwood.example"], "at": "2026-11-11T17:05:00Z", "body": "Approved, go ahead and book it."}
+     ]},
+    {"id": "19b0a002", "subject": "Q4 estimated taxes", "labels": ["SENT"],
+     "messages": [
+       {"from": "priya@ramanstudio.example", "to": ["hal@brennancpa.example"], "at": "2026-11-05T17:00:00Z", "body": "Hi Hal, could you send my Q4 estimated tax figures? Thanks, Priya"}
+     ]},
+    {"id": "19b0a003", "subject": "Holiday labels", "labels": ["INBOX"],
+     "messages": [
+       {"from": "mia@oaklinecoffee.example", "to": ["priya@ramanstudio.example"], "at": "2026-11-10T18:00:00Z", "body": "Hi Priya, could you send the holiday label proofs this week? Our printer needs them by Monday. Mia"}
+     ]},
+    {"id": "19b0a004", "subject": "Fernwood — logo round 2 feedback", "labels": ["INBOX", "IMPORTANT"],
+     "messages": [
+       {"from": "leo@fernwood.example", "to": ["priya@ramanstudio.example"], "at": "2026-11-11T23:10:00Z", "body": "The team picked option B with two tweaks (notes attached). Can you confirm we're still on for Dec 6 and send a revised timeline by Friday? Leo"}
+     ]},
+    {"id": "19b0a005", "subject": "Retainer proposal — a few questions", "labels": ["INBOX"],
+     "messages": [
+       {"from": "nora@tidewater.example", "to": ["priya@ramanstudio.example"], "at": "2026-11-12T01:20:00Z", "body": "Priya, thanks for the proposal. Could we do a 30-minute call next week to go through scope? Send me a couple of times. Nora"}
+     ]},
+    {"id": "19b0a006", "subject": "Dribbble: Top shots this week", "labels": ["INBOX", "CATEGORY_PROMOTIONS"],
+     "messages": [{"from": "digest@dribbble.example", "to": ["priya@ramanstudio.example"], "at": "2026-11-12T12:00:00Z", "body": "Top shots this week. Unsubscribe."}]},
+    {"id": "19b0a007", "subject": "You have 3 new connection requests", "labels": ["INBOX", "CATEGORY_SOCIAL"],
+     "messages": [{"from": "notifications@linkedin.example", "to": ["priya@ramanstudio.example"], "at": "2026-11-12T13:00:00Z", "body": "See your new connection requests."}]}
+  ]
+}

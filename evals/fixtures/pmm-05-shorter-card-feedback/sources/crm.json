@@ -1,0 +1,16 @@
+{
+  "deals": [
+    {
+      "id": "deal/1019",
+      "name": "Initech — new business",
+      "owner": "Sam Ortiz",
+      "stage": "Discovery",
+      "amount": 38000,
+      "next_step": "Intro call with Carla Mendes",
+      "next_step_due": "2026-11-13",
+      "contacts": [
+        "Carla Mendes"
+      ]
+    }
+  ]
+}

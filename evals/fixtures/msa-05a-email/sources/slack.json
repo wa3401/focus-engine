@@ -1,0 +1,33 @@
+{
+  "user": {"id": "U_MAYA", "name": "Maya Chen"},
+  "channels": [
+    {"id": "C_DEALS", "name": "deals"},
+    {"id": "C_LEAD", "name": "leadership"},
+    {"id": "C_HIRING", "name": "hiring"},
+    {"id": "C_RANDOM", "name": "random"},
+    {"id": "D_DANA", "name": "DM: Dana Whitfield"},
+    {"id": "D_BRIEF", "name": "DM: brief app"}
+  ],
+  "messages": [
+    {"id": "D_DANA/1794436800.000100", "channel": "D_DANA", "ts": "2026-11-11T22:40:00Z",
+     "from": "U_DANA", "from_name": "Dana Whitfield",
+     "text": "Can you send me the updated Q4 commit number before the 11am leadership sync tomorrow? I want to walk the board deck with it.",
+     "thread_of": null, "reactions": []},
+    {"id": "C_DEALS/1794424500.000100", "channel": "C_DEALS", "ts": "2026-11-11T19:15:00Z",
+     "from": "U_SAM", "from_name": "Sam Ortiz",
+     "text": "@Maya Initech wants 12% off the $9k starter deal. OK to approve? They want to sign by Friday.",
+     "thread_of": null, "reactions": []},
+    {"id": "C_DEALS/1794427320.000100", "channel": "C_DEALS", "ts": "2026-11-11T20:02:00Z",
+     "from": "U_LENA", "from_name": "Lena Park",
+     "text": "Closed Wayfarer Labs, $18k ARR. First deal sourced from the partner pilot!",
+     "thread_of": null, "reactions": [{"name": "tada", "users": ["U_SAM", "U_RAJ"]}]},
+    {"id": "C_RANDOM/1794416400.000100", "channel": "C_RANDOM", "ts": "2026-11-11T17:00:00Z",
+     "from": "U_RAJ", "from_name": "Raj Mehta",
+     "text": "Whoever finished the oat milk: there is more in the back fridge.",
+     "thread_of": null, "reactions": []},
+    {"id": "C_HIRING/1794431400.000100", "channel": "C_HIRING", "ts": "2026-11-11T21:10:00Z",
+     "from": "U_RAJ", "from_name": "Raj Mehta",
+     "text": "Updated the AE interview scorecard in Drive, comments welcome whenever.",
+     "thread_of": null, "reactions": []}
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "user": "maya@northwind.example",
+  "threads": [
+    {"id": "19a2a001", "subject": "Acme renewal — redlines on MSA section 7", "labels": ["INBOX", "IMPORTANT"],
+     "messages": [
+       {"from": "priya.shah@acme.example", "to": ["maya@northwind.example"], "at": "2026-11-10T20:45:00Z",
+        "body": "Hi Maya, our legal team sent redlines on section 7 (liability cap). We need your sign-off or a counter by Friday noon to keep the Dec 1 start date. Thanks, Priya"}
+     ]},
+    {"id": "19a2a003", "subject": "Globex expansion — seat tiers", "labels": ["INBOX"],
+     "messages": [
+       {"from": "tom.becker@globex.example", "to": ["maya@northwind.example"], "at": "2026-11-10T17:30:00Z",
+        "body": "Maya, before you send the quote can you confirm whether the 150-seat tier includes the analytics add-on? Need to know by Monday. Tom"}
+     ]},
+    {"id": "19a2a005", "subject": "AE candidates — interview slots", "labels": ["INBOX"],
+     "messages": [
+       {"from": "jordan.lee@talentbridge.example", "to": ["maya@northwind.example"], "at": "2026-11-10T22:00:00Z",
+        "body": "Hi Maya, three candidates are ready. Please send me 2-3 interview slots for next week by Friday. Jordan"},
+       {"from": "jordan.lee@talentbridge.example", "to": ["maya@northwind.example"], "at": "2026-11-11T21:15:00Z",
+        "body": "Adding a fourth candidate with a strong enterprise background, profile attached. Still need your slots by Friday so I can lock them in. Jordan"}
+     ]},
+    {"id": "19a2a006", "subject": "Partner program budget", "labels": ["SENT"],
+     "messages": [
+       {"from": "maya@northwind.example", "to": ["dana@northwind.example"], "at": "2026-11-09T15:00:00Z",
+        "body": "Dana, could you approve the partner program budget when you get a chance? Sheet attached. Maya"}
+     ]},
+    {"id": "19a2a007", "subject": "Q4 forecasting webinar — Nov 19", "labels": ["INBOX"],
+     "messages": [
+       {"from": "news@revenueweekly.example", "to": ["maya@northwind.example"], "at": "2026-11-10T11:00:00Z",
+        "body": "Join our Q4 forecasting webinar on Nov 19. Register now. Unsubscribe."}
+     ]},
+    {"id": "19a2a008", "subject": "URGENT: last seats for the forecasting webinar", "labels": ["INBOX"],
+     "messages": [
+       {"from": "news@revenueweekly.example", "to": ["maya@northwind.example"], "at": "2026-11-12T10:00:00Z",
+        "body": "Only 12 seats left for our Nov 19 forecasting webinar. Register today. Unsubscribe."}
+     ]},
+    {"id": "19a2a009", "subject": "Callwise product update: AI call summaries are here", "labels": ["INBOX"],
+     "messages": [
+       {"from": "updates@callwise.example", "to": ["maya@northwind.example"], "at": "2026-11-12T09:30:00Z",
+        "body": "New this month in Callwise: AI call summaries and coaching scorecards. See what's new. Unsubscribe."}
+     ]}
+  ]
+}

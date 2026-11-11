@@ -1,0 +1,240 @@
+{
+  "tz": "America/New_York",
+  "events": [
+    {
+      "id": "evt_staff_1111",
+      "title": "Staff check-in",
+      "start": "2026-11-11T14:00:00Z",
+      "end": "2026-11-11T14:30:00Z",
+      "attendees": [
+        {
+          "email": "darnell@blueridgeliteracy.example",
+          "name": "Darnell Brooks",
+          "response": "accepted"
+        },
+        {
+          "email": "kim@blueridgeliteracy.example",
+          "name": "Kim Tran",
+          "response": "accepted"
+        },
+        {
+          "email": "marcus@blueridgeliteracy.example",
+          "name": "Marcus Hill",
+          "response": "accepted"
+        }
+      ],
+      "organizer": "darnell@blueridgeliteracy.example",
+      "description": "",
+      "status": "confirmed",
+      "recurring": true
+    },
+    {
+      "id": "evt_staff_1112",
+      "title": "Staff check-in",
+      "start": "2026-11-12T14:00:00Z",
+      "end": "2026-11-12T14:30:00Z",
+      "attendees": [
+        {
+          "email": "darnell@blueridgeliteracy.example",
+          "name": "Darnell Brooks",
+          "response": "accepted"
+        },
+        {
+          "email": "kim@blueridgeliteracy.example",
+          "name": "Kim Tran",
+          "response": "accepted"
+        },
+        {
+          "email": "marcus@blueridgeliteracy.example",
+          "name": "Marcus Hill",
+          "response": "accepted"
+        }
+      ],
+      "organizer": "darnell@blueridgeliteracy.example",
+      "description": "",
+      "status": "confirmed",
+      "recurring": true
+    },
+    {
+      "id": "evt_westside_visit",
+      "title": "Site visit — Westside Library",
+      "start": "2026-11-12T14:30:00Z",
+      "end": "2026-11-12T16:00:00Z",
+      "attendees": [
+        {
+          "email": "darnell@blueridgeliteracy.example",
+          "name": "Darnell Brooks",
+          "response": "accepted"
+        },
+        {
+          "email": "kim@blueridgeliteracy.example",
+          "name": "Kim Tran",
+          "response": "accepted"
+        }
+      ],
+      "organizer": "darnell@blueridgeliteracy.example",
+      "description": "",
+      "status": "confirmed",
+      "recurring": false
+    },
+    {
+      "id": "evt_harper_call",
+      "title": "Donor call — Harper Family Foundation",
+      "start": "2026-11-12T16:00:00Z",
+      "end": "2026-11-12T17:00:00Z",
+      "attendees": [
+        {
+          "email": "darnell@blueridgeliteracy.example",
+          "name": "Darnell Brooks",
+          "response": "accepted"
+        },
+        {
+          "email": "marcus@blueridgeliteracy.example",
+          "name": "Marcus Hill",
+          "response": "accepted"
+        },
+        {
+          "email": "giving@harperfoundation.example",
+          "name": "Lynn Harper",
+          "response": "accepted"
+        }
+      ],
+      "organizer": "darnell@blueridgeliteracy.example",
+      "description": "",
+      "status": "confirmed",
+      "recurring": false
+    },
+    {
+      "id": "evt_lunch_greene",
+      "title": "Lunch with Paul Greene (board)",
+      "start": "2026-11-12T17:00:00Z",
+      "end": "2026-11-12T18:00:00Z",
+      "attendees": [
+        {
+          "email": "darnell@blueridgeliteracy.example",
+          "name": "Darnell Brooks",
+          "response": "accepted"
+        },
+        {
+          "email": "paul.greene@greene.example",
+          "name": "Paul Greene",
+          "response": "accepted"
+        }
+      ],
+      "organizer": "darnell@blueridgeliteracy.example",
+      "description": "",
+      "status": "confirmed",
+      "recurring": false
+    },
+    {
+      "id": "evt_program_review",
+      "title": "Program review with Kim",
+      "start": "2026-11-12T18:00:00Z",
+      "end": "2026-11-12T19:30:00Z",
+      "attendees": [
+        {
+          "email": "darnell@blueridgeliteracy.example",
+          "name": "Darnell Brooks",
+          "response": "accepted"
+        },
+        {
+          "email": "kim@blueridgeliteracy.example",
+          "name": "Kim Tran",
+          "response": "accepted"
+        }
+      ],
+      "organizer": "darnell@blueridgeliteracy.example",
+      "description": "",
+      "status": "confirmed",
+      "recurring": false
+    },
+    {
+      "id": "evt_campaign_checkin",
+      "title": "Year-end campaign check-in",
+      "start": "2026-11-12T19:30:00Z",
+      "end": "2026-11-12T20:30:00Z",
+      "attendees": [
+        {
+          "email": "darnell@blueridgeliteracy.example",
+          "name": "Darnell Brooks",
+          "response": "accepted"
+        },
+        {
+          "email": "marcus@blueridgeliteracy.example",
+          "name": "Marcus Hill",
+          "response": "accepted"
+        }
+      ],
+      "organizer": "darnell@blueridgeliteracy.example",
+      "description": "",
+      "status": "confirmed",
+      "recurring": false
+    },
+    {
+      "id": "evt_partners_mtg",
+      "title": "Community partners meeting",
+      "start": "2026-11-12T20:30:00Z",
+      "end": "2026-11-12T22:00:00Z",
+      "attendees": [
+        {
+          "email": "darnell@blueridgeliteracy.example",
+          "name": "Darnell Brooks",
+          "response": "accepted"
+        },
+        {
+          "email": "kim@blueridgeliteracy.example",
+          "name": "Kim Tran",
+          "response": "accepted"
+        }
+      ],
+      "organizer": "darnell@blueridgeliteracy.example",
+      "description": "",
+      "status": "confirmed",
+      "recurring": false
+    },
+    {
+      "id": "evt_board_finance",
+      "title": "Board finance committee",
+      "start": "2026-11-13T18:00:00Z",
+      "end": "2026-11-13T19:00:00Z",
+      "attendees": [
+        {
+          "email": "darnell@blueridgeliteracy.example",
+          "name": "Darnell Brooks",
+          "response": "accepted"
+        },
+        {
+          "email": "angela.ruiz@ruizlaw.example",
+          "name": "Angela Ruiz",
+          "response": "accepted"
+        }
+      ],
+      "organizer": "darnell@blueridgeliteracy.example",
+      "description": "",
+      "status": "confirmed",
+      "recurring": false
+    },
+    {
+      "id": "evt_ellen_call",
+      "title": "Call with Ellen Ford (state grants)",
+      "start": "2026-11-13T20:00:00Z",
+      "end": "2026-11-13T20:30:00Z",
+      "attendees": [
+        {
+          "email": "darnell@blueridgeliteracy.example",
+          "name": "Darnell Brooks",
+          "response": "accepted"
+        },
+        {
+          "email": "ellen.ford@stategrants.example",
+          "name": "Ellen Ford",
+          "response": "accepted"
+        }
+      ],
+      "organizer": "darnell@blueridgeliteracy.example",
+      "description": "",
+      "status": "confirmed",
+      "recurring": false
+    }
+  ]
+}

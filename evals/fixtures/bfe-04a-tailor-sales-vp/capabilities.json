@@ -1,0 +1,8 @@
+{
+  "tool": "Claude", "plan": "Max", "account": "personal",
+  "schedule": true, "max_scheduled_tasks": null,
+  "connectors": ["slack", "gmail", "gcal", "gdrive", "hubspot"],
+  "connectors_in_schedule": true, "write_profile": true, "doc_tool": "Google Docs",
+  "send_email": true, "send_chat": true, "send_chat_targets": ["self_dm"],
+  "subagents": true, "past_chat_search": true, "admin_blocks": [], "field_limits": {}
+}

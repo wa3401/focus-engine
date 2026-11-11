@@ -1,0 +1,95 @@
+{
+  "memory": [
+    "Maya is VP of Sales at Northwind Analytics."
+  ],
+  "chats": [
+    {
+      "id": "chat_01",
+      "at": "2026-10-30T20:00:00Z",
+      "title": "Call recap email — Acme",
+      "user_turns": [
+        "Turn my notes from today's Acme call into a recap email: what we agreed, next steps with owners and dates."
+      ]
+    },
+    {
+      "id": "chat_02",
+      "at": "2026-11-02T13:15:00Z",
+      "title": "Monday pipeline summary for Dana",
+      "user_turns": [
+        "Here's the HubSpot export. Summarize the pipeline for Dana: commit, best case, what moved, what's at risk. Same format as last week."
+      ]
+    },
+    {
+      "id": "chat_03",
+      "at": "2026-11-03T15:00:00Z",
+      "title": "AE candidate outreach — Jamie R.",
+      "user_turns": [
+        "Write a short personal outreach note to Jamie R., an AE candidate Jordan sourced. Mention our Q1 partner launch and why the role is interesting."
+      ]
+    },
+    {
+      "id": "chat_04",
+      "at": "2026-11-03T21:10:00Z",
+      "title": "Call recap email — Globex",
+      "user_turns": [
+        "Turn my notes from today's Globex call into a recap email: what we agreed, next steps with owners and dates."
+      ]
+    },
+    {
+      "id": "chat_05",
+      "at": "2026-11-05T19:30:00Z",
+      "title": "Call recap email — Initech",
+      "user_turns": [
+        "Turn my notes from today's Initech call into a recap email: what we agreed, next steps with owners and dates."
+      ]
+    },
+    {
+      "id": "chat_06",
+      "at": "2026-11-05T16:45:00Z",
+      "title": "AE candidate outreach — Chris M.",
+      "user_turns": [
+        "Write a short personal outreach note to Chris M., an AE candidate Jordan sourced. Mention our Q1 partner launch and why the role is interesting."
+      ]
+    },
+    {
+      "id": "chat_07",
+      "at": "2026-11-06T14:00:00Z",
+      "title": "Partner tiers brainstorm",
+      "user_turns": [
+        "Brainstorm three partner tiers for the Q1 program."
+      ]
+    },
+    {
+      "id": "chat_08",
+      "at": "2026-11-09T13:20:00Z",
+      "title": "Monday pipeline summary for Dana",
+      "user_turns": [
+        "Here's the HubSpot export. Summarize the pipeline for Dana: commit, best case, what moved, what's at risk. Same format as last week."
+      ]
+    },
+    {
+      "id": "chat_09",
+      "at": "2026-11-10T20:40:00Z",
+      "title": "Call recap email — Umbrella Health",
+      "user_turns": [
+        "Turn my notes from today's Umbrella Health call into a recap email: what we agreed, next steps with owners and dates."
+      ]
+    },
+    {
+      "id": "chat_10",
+      "at": "2026-11-11T16:00:00Z",
+      "title": "AE candidate outreach — Pat O.",
+      "user_turns": [
+        "Write a short personal outreach note to Pat O., an AE candidate Jordan sourced. Mention our Q1 partner launch and why the role is interesting."
+      ]
+    },
+    {
+      "id": "chat_11",
+      "at": "2026-11-12T18:50:00Z",
+      "title": "Call recap email — Globex",
+      "user_turns": [
+        "Turn my notes from today's Globex call into a recap email: what we agreed, next steps with owners and dates."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "user": "maya@northwind.example",
+  "threads": [
+    {
+      "id": "18f3e2b9",
+      "subject": "Hollis intro — partner program",
+      "labels": [
+        "INBOX"
+      ],
+      "messages": [
+        {
+          "from": "raj@northwind.example",
+          "to": [
+            "maya@northwind.example"
+          ],
+          "at": "2026-11-06T15:00:00Z",
+          "body": "Hollis came in through the partner inquiry form. Erin asked for a 45-minute intro and said she'll bring a colleague. I set it for Wednesday."
+        }
+      ]
+    }
+  ]
+}

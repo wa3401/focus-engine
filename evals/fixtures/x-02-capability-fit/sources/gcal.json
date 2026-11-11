@@ -1,0 +1,13 @@
+{
+  "tz": "America/Denver",
+  "events": [
+    {"id": "evt_p01_fernwood", "title": "Fernwood weekly check-in", "start": "2026-11-12T18:00:00Z", "end": "2026-11-12T18:45:00Z",
+     "attendees": [
+       {"email": "leo@fernwood.example", "name": "Leo Grant", "response": "accepted"},
+       {"email": "priya@ramanstudio.example", "name": "Priya Raman", "response": "accepted"}],
+     "organizer": "leo@fernwood.example", "description": "Logo round 2, timeline.", "status": "confirmed", "recurring": true},
+    {"id": "evt_p01_deep", "title": "Deep work: Fernwood brand guidelines", "start": "2026-11-12T20:00:00Z", "end": "2026-11-12T22:00:00Z",
+     "attendees": [{"email": "priya@ramanstudio.example", "name": "Priya Raman", "response": "accepted"}],
+     "organizer": "priya@ramanstudio.example", "description": "", "status": "confirmed", "recurring": false}
+  ]
+}

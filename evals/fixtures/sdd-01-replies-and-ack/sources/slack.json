@@ -1,0 +1,100 @@
+{
+  "user": {
+    "id": "U_ME",
+    "name": "Maya Chen"
+  },
+  "channels": [
+    {
+      "id": "C_DEALS",
+      "name": "deals"
+    },
+    {
+      "id": "C_LEAD",
+      "name": "leadership"
+    },
+    {
+      "id": "D_LENA",
+      "name": "Lena Park (DM)"
+    },
+    {
+      "id": "D_SAM",
+      "name": "Sam Ortiz (DM)"
+    },
+    {
+      "id": "D_FOCUS",
+      "name": "focus-engine (DM)"
+    }
+  ],
+  "messages": [
+    {
+      "id": "C_DEALS/1794433200.000100",
+      "channel": "C_DEALS",
+      "ts": "2026-11-11T21:40:00Z",
+      "from": "U_SAM",
+      "from_name": "Sam Ortiz",
+      "text": "Maya — can I offer Acme 8% off for a 3-year term? Priya says it's the last open point before signature.",
+      "thread_of": null,
+      "reactions": []
+    },
+    {
+      "id": "C_DEALS/1794492300.000100",
+      "channel": "C_DEALS",
+      "ts": "2026-11-12T14:05:00Z",
+      "from": "U_ME",
+      "from_name": "Maya Chen",
+      "text": "Approved — go ahead with 8% on the 3-year term. Put it in the order form, not the email.",
+      "thread_of": "C_DEALS/1794433200.000100",
+      "reactions": []
+    },
+    {
+      "id": "D_LENA/1794435000.000100",
+      "channel": "D_LENA",
+      "ts": "2026-11-11T22:10:00Z",
+      "from": "U_LENA",
+      "from_name": "Lena Park",
+      "text": "Could you look over the Globex mutual action plan before I send it to Tom? https://docs.google.com/document/d/1GlobexMAPExample",
+      "thread_of": null,
+      "reactions": []
+    },
+    {
+      "id": "D_LENA/1794500400.000100",
+      "channel": "D_LENA",
+      "ts": "2026-11-12T16:20:00Z",
+      "from": "U_ME",
+      "from_name": "Maya Chen",
+      "text": "Left comments in the doc. Step 4 needs procurement's dates; otherwise good to send.",
+      "thread_of": "D_LENA/1794435000.000100",
+      "reactions": []
+    },
+    {
+      "id": "C_LEAD/1794443400.000100",
+      "channel": "C_LEAD",
+      "ts": "2026-11-12T00:30:00Z",
+      "from": "U_RAJ",
+      "from_name": "Raj Mehta",
+      "text": "Maya, can you send me your Q4 commit and best-case numbers for the board deck by Friday noon?",
+      "thread_of": null,
+      "reactions": []
+    },
+    {
+      "id": "C_LEAD/1794490800.000100",
+      "channel": "C_LEAD",
+      "ts": "2026-11-12T13:40:00Z",
+      "from": "U_ME",
+      "from_name": "Maya Chen",
+      "text": "on it",
+      "thread_of": "C_LEAD/1794443400.000100",
+      "reactions": []
+    },
+    {
+      "id": "C_DEALS/1794511800.000200",
+      "channel": "C_DEALS",
+      "ts": "2026-11-12T19:30:00Z",
+      "from": "U_SAM",
+      "from_name": "Sam Ortiz",
+      "text": "Acme order form updated with the 3-year term.",
+      "thread_of": "C_DEALS/1794433200.000100",
+      "reactions": []
+    }
+  ]
+}
