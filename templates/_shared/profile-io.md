@@ -10,7 +10,7 @@ Several helpers can run close together, so each one edits only what it owns. Eve
 | --- | --- | --- |
 | About me, Priorities, People, Noise rules | The user and `build-my-focus-engine` | Append an event (`priority(…)`, `people(…)`, `noise_rule(…)`); the morning brief applies it at its daily tidy |
 | Helper settings → a helper's own row | That helper (from feedback) and setup | Append `setting(…)` |
-| Data → ledger entries | The helper that created the entry | Append `status(…)` events |
+| Data → ledger entries | The helper that created the entry | Append `status(<id>, <status>)` or `kind(<id>, commitment, <due>)` events |
 | Data → watermarks | Each helper, for its own sources only | — |
 | Data → events | Everyone (append only) | — |
 | Decision log | `hand-off-my-busywork` | — |
@@ -31,11 +31,12 @@ Keep the Profile under about 15,000 characters. If it's larger after tidying, ar
 - Times are ISO 8601 in UTC (`2026-11-12T13:05:00Z`). Display in the user's time zone.
 - Ledger keys are the source's own ID, prefixed by source: `slack:C04ABC/1731400000.1234`, `gmail:18c2f…`, `gcal:abc123@google.com`, `hubspot:deal/991`. Add a short ID (`L-0142`) that never changes.
 - Summaries are written by you, at most 15 words, with no quoted text from the source.
+- Events that change a ledger entry you don't own take one of two forms: `status(L-0312, done)` (or `snoozed, <until>`, `dismissed`, `open`) and `kind(L-0312, commitment, 2026-11-13T17:00:00Z)`. The owner applies them at the next tidy. Store them in the data block's event shape (`profile-template.md`).
 - Never delete the user's words in the readable sections; propose changes through events and the next delivery instead.
 
 ## When writing is blocked
 
-If this tool can read but not write the Profile, put your writes in the delivery's "Profile updates" block (see `feedback.md`). Next time the user chats with this helper, apply the block first.
+If this tool can read but not write the Profile, end the delivery with a fenced "Profile updates" block holding the exact changes (format in `feedback.md`). The user pastes it under **Pending updates** at the top of the Profile. Every run reads Pending updates first and treats each line as already applied. A run that can write the Profile folds those lines into the ledger and sections, then clears the section.
 
 ## Version
 

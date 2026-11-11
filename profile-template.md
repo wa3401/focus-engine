@@ -6,7 +6,7 @@
 
 ## Pending updates
 
-> Paste "Profile updates" blocks from your helpers here. Helpers treat these as already done. Clear this section when you tidy the Profile.
+> Paste "Profile updates" blocks from your helpers here. Every run treats these lines as already applied. A run that can write the Profile folds them in and clears this section.
 
 ## About me
 
@@ -103,7 +103,16 @@ Event shape:
 - at: 2026-11-12T13:40:00Z
   by: user | <helper>
   via: slack_reply | email_reply | artifact | chat | shutdown
-  event: status | noise_rule | priority | people | setting | signal | verifier_miss
+  event: status | kind | noise_rule | priority | people | setting | signal | verifier_miss
   args: {…}
   applied: false
+```
+
+Ledger changes from a helper that doesn't own the entry use one of two events:
+
+```yaml
+- event: status                    # written as status(L-0312, open)
+  args: {id: L-0312, status: open}   # status: done | dismissed | snoozed (+ until) | open | waiting
+- event: kind                      # written as kind(L-0312, commitment, 2026-11-13T17:00:00Z)
+  args: {id: L-0312, kind: commitment, due: 2026-11-13T17:00:00Z}
 ```

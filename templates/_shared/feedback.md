@@ -37,8 +37,14 @@ Setup picks the channel's method with the user. Use the matching line at the end
 | --- | --- |
 | Email | "Reply to this email with changes, e.g. `done 2, snooze 4 to Fri, mute newsletters`." |
 | Slack / Teams DM | "Reply in thread, or react: ✅ done · 💤 snooze to tomorrow · 👎 not useful." |
-| Claude artifact | Render a small form: a text box per item plus one "anything else?" box. |
+| Claude artifact | Render a small form: a text box per item plus one "anything else?" box. See "Saving artifact feedback" below. |
 | In-app / chat | "Reply here with changes, e.g. `done 2, snooze 4 to Fri`." |
+
+Build the example in the line from this delivery. Use item numbers that actually appear in it, and offer only actions that apply now. If there is one open item, the example uses `1`. Don't offer `build 1` after it's built, or a yes to a change you didn't propose. If no item can take an action, keep the line but drop the example.
+
+## Saving artifact feedback
+
+The page saves feedback only through storage the tool actually provides: persisted artifact storage, or a write to the Profile. Check that the storage exists before showing the form as savable. If none is available, the page shows "Copy your feedback and paste it in chat" with a copy button. Show "Saved" only after the save succeeded; if it fails, say so and offer the copy option.
 
 ## Owner-only
 
@@ -46,15 +52,15 @@ Only feedback from the user's own account counts. If someone else replies in a t
 
 ## When the tool can't write the Profile
 
-End the delivery with a fenced block the user pastes into the Profile's **Pending updates** section (at the top of the doc):
+End the delivery with a fenced block holding the exact changes. The user pastes it under **Pending updates** at the top of the Profile:
 
 ```
-Profile updates (paste under "Pending updates" in your Profile):
+Profile updates (paste under "Pending updates" at the top of your Profile):
 - status 3 done
 - noise_rule add "vendor newsletters"
 ```
 
-Every run reads **Pending updates** first and treats each line as already applied: it was the user's own instruction. When a run can write the Profile (or the user tidies it by hand weekly), fold those lines into the ledger and sections, then clear the section.
+Every run reads **Pending updates** first and treats each line as already applied: it was the user's own instruction. A run that can write the Profile folds those lines into the ledger and sections, then clears the section.
 
 ## Learning loop
 

@@ -46,7 +46,7 @@ Keep it to one screen. Use short IDs so feedback works ("done 2").
 Applied: <only if feedback was applied since last brief>
 
 NEEDS YOU (≤{{cap}})
-1. <what to do> — <who/why, one line> · <link> · <due if any>
+1. <what to do> — <who/why, one line> · <link, or source ID if no real link> · <due if any>
 2. …
 
 WAITING ON OTHERS
@@ -54,15 +54,24 @@ W1. <who> — <what> · <n> days · <draft nudge offered?>
 
 COMING UP
 <day/time> <meeting or deadline> — <what to prepare> 
-{{if prep-my-meetings is folded in: "Prep cards for today's meetings follow below."}}
+{{if Helper settings say meeting prep is folded into the brief: "Prep cards for today's meetings follow below."}}
 
 FYI (<n>) <folded>
 
-Checked: <sources read> · <failed sources, if any> · Couldn't confirm: <items + links, if any>
+Checked: <sources read> · <sources that failed or weren't read> · Couldn't confirm: <items + links, if any>
 <feedback line for {{channel}}>
 ```
 
+Checked never names muted, snoozed or dismissed items, senders or channels. A bare count is fine: "skipped 6 muted". A snoozed item stays out of every section, Coming up included, until its snooze date.
+
 {{format_overrides — sections removed, renamed, reordered, or added during setup}}
+
+### By channel (keep only {{channel}})
+
+- **Email:** the output starts with the `Subject:` line, then a blank line, then the brief. No To or From headers. Plain text: caps headings, no tables.
+- **Slack / Teams DM:** the channel's own markup and link syntax. No headings with `#`, no tables. Feedback comes as thread replies and reactions.
+- **Claude artifact:** one self-contained page. A text box per Needs you item plus one "Anything else?" box. Save feedback only through storage the tool provides (persisted artifact storage or the Profile). If none is available, show "Copy your feedback and paste it in chat" with a copy button. Never show "Saved" unless the save succeeded.
+- **In-app / chat:** plain markdown, no tables.
 
 ## Rules specific to the brief
 
@@ -71,4 +80,4 @@ Checked: <sources read> · <failed sources, if any> · Couldn't confirm: <items 
 - Once a day, after delivering, do the Profile tidy described in `profile-io.md` (you are the tidy owner unless About me says otherwise).
 - {{friday_rollup — if on: "On Fridays, add a short 'This week' roll-up: done count, what slipped, and open waiting-ons older than a week."}}
 - {{urgent_alerts — if on: "Also check every {{alert_interval}} during working hours. Send a single-line alert only for {{alert_rule, e.g. a VIP waiting >2h or something due within 3 hours}}. Respect quiet hours."}}
-- {{meeting_prep_folded — if on: "Append today's meeting prep cards using prep-my-meetings' card format and rules."}}
+- {{meeting_prep_folded — if on: "Append today's meeting prep cards using prep-my-meetings' card format and rules."}} Add prep cards only when Helper settings say meeting prep is folded into the brief. If prep-my-meetings runs on its own, don't repeat its cards; at most name the meeting in Coming up.

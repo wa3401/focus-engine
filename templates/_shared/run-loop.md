@@ -20,12 +20,16 @@ If the Profile cannot be read, stop and deliver a one-line note: "I couldn't ope
 
 For each source in this helper's settings, read everything **new since that source's watermark**, plus every ledger item that is still open. Use the user's time zone from About me for all "today", "tomorrow", "due in 24h" reasoning; store times in UTC.
 
+- **Relative time words.** Say "last night", "this morning" or "yesterday" only after working it out from the local time in the user's time zone (4:10 pm is afternoon, not night). Otherwise say a plain day and time: "Wed 4:10 pm".
+
 - If a source fails (expired login, connector down, timeout), note it and keep going. Do **not** move its watermark.
 - Never read beyond the sources the user approved in setup.
 
 ## 4. Draft
 
 Turn what you gathered into candidate items for this helper's format. For every candidate keep: the source's own ID (Slack message ts, email thread ID, calendar event ID, ticket ID, doc URL), a link, who is involved, and why it might matter (which priority, VIP or deadline).
+
+**Never build a link.** Reuse the exact link stored in the ledger, in the source, or in an earlier delivery. If no real link exists, give the source ID only.
 
 Match each candidate against the ledger by source ID first. If it is already in the ledger, update that entry instead of creating a new one.
 
@@ -40,7 +44,7 @@ Keep an item only if it is:
 - **Actionable** — the user can do something about it (decide, reply, prepare, protect time), or it changes what they should do today.
 - **Relevant** — tied to a current priority, a VIP, a deadline, or something the user said they care about.
 - **Accurate** — passed verification.
-- **Not muted** — doesn't match a noise rule and isn't dismissed or snoozed.
+- **Not muted** — doesn't match a noise rule and isn't dismissed or snoozed. A snoozed item stays out of every section, Coming up included, until its snooze date.
 
 Then enforce this helper's item cap, most urgent first. Anything cut stays in the ledger as open; it can surface on a later run when it becomes more pressing.
 
@@ -50,7 +54,7 @@ When you can, do this pass with a second fresh context (see `verification.md`) s
 
 Deliver once, to the channel in this helper's settings, in its format. End every delivery with:
 
-- **Checked:** the sources read this run, any that failed ("Slack didn't respond, so Slack items may be missing"), and any items you couldn't confirm, with links.
+- **Checked:** the sources read this run, the sources that failed or weren't read ("Slack didn't respond, so Slack items may be missing"), and any items you couldn't confirm, with links. Never name muted, snoozed or dismissed items, senders or channels anywhere in a delivery. A bare count is fine: "skipped 6 muted".
 - **The feedback line** for this channel (see `feedback.md`).
 - **A "Profile updates" block** only if this tool cannot write to the Profile itself.
 
