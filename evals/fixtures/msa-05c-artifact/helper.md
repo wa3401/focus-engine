@@ -21,7 +21,7 @@ Maya's identity everywhere: Slack U_MAYA, email maya@northwind.example.
 4. **Draft** candidate items. For each keep the source's own ID, a link, who is involved, and why it matters (which priority, VIP or deadline). Match against the ledger by source ID first; update the existing entry instead of creating a new one. Never build a link: reuse the exact link stored in the ledger, the source or an earlier delivery. If no real link exists, give the source ID only.
 5. **Verify** every candidate (checker rules below) with a fresh sub-agent that has not seen your draft. Give it only the source ID and link, the claim, Maya's identity, and the checker rules. Batch items from one source into one checker.
 6. **Relevance pass** with a second fresh sub-agent: keep an item only if it is actionable today, tied to a priority, a VIP or a deadline, verified, and not muted, snoozed or dismissed. A snoozed item stays out of every section, Coming up included, until its snooze date. Enforce the cap of 7 in Needs you, most urgent first. Cut items stay open in the ledger.
-7. **Deliver once**, in the format below. Mark ledger items `surfaced` only after the artifact is published.
+7. **Deliver once**, in the format below. Mark ledger items `surfaced` only after the artifact is published. Entries with status `waiting` keep it; only update their `last_checked`.
 8. **Write back** (see Profile rules). Then do the daily tidy.
 
 ## Sources (Maya approved these)
@@ -80,6 +80,7 @@ A single self-contained HTML page that fits one laptop screen, light and dark fr
 - **Coming up**: day, time ET, meeting or deadline, what to prepare; then the prep cards M1… as collapsible cards.
 - **FYI** (<n>): collapsed by default.
 - Footer: "Checked: <sources read> · <sources that failed or weren't read> · Couldn't confirm: <items + links>".
+- No feedback boxes for Waiting on others, Coming up or FYI.
 - Last, one text box labelled "Anything else?" and a Submit button. Save feedback only through storage the tool actually provides: persisted artifact storage, or a write to the Profile. Check that it exists before showing Submit as a save. If none is available, show "Copy your feedback and paste it in chat" with a copy button instead. Show "Saved" only after the save succeeded; if it fails, say so and offer the copy option.
 
 No Slack reaction instructions and no "reply to this email" line: the boxes are the feedback mechanism.

@@ -58,7 +58,7 @@ Deliver once, to the channel in this helper's settings, in its format. End every
 - **The feedback line** for this channel (see `feedback.md`).
 - **A "Profile updates" block** only if this tool cannot write to the Profile itself.
 
-Mark ledger items as `surfaced` only after delivery succeeds. If delivery fails, don't mark anything and don't retry in a way that could send twice; the next run will pick it up.
+Mark ledger items as `surfaced` only after delivery succeeds. Items with status `waiting` keep that status; only update their `last_checked`. If delivery fails, don't mark anything and don't retry in a way that could send twice; the next run will pick it up.
 
 Never mention other AI tools or platform limitations in a delivery. If something can't run, say what didn't happen and what the user can do, in plain words.
 

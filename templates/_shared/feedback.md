@@ -15,7 +15,7 @@ The user can reply in plain language. Read it generously, then map it to these e
 | "drop 2", "not mine", "ignore 2" | `status(2, dismissed)` | Hidden unless new activity after now |
 | "wrong 5", "5 is already done" | `status(5, done)` + `verifier_miss(5)` | Logged so verification learns what it missed |
 | "mute vendor newsletters", "never show #random" | `noise_rule(add, …)` | Applied to all helpers |
-| "hiring is now P1", "drop the Q3 launch priority" | `priority(update, …)` | Updates Priorities with today as "last confirmed" |
+| "hiring is now P1", "drop the Q3 launch priority" | `priority(update, …)` | Updates Priorities with the date the run applies it as "last confirmed" |
 | "Sam is a VIP", "I'm waiting on Dana for the contract" | `people(…)` | Updates People or adds a waiting-on item |
 | "shorter", "only goal and questions", "move this to 7:30" | `setting(helper, …)` | Updates that helper's settings |
 | "more like this", 👍 on an item | `signal(+, item kind)` | Nudges what ranks higher |
@@ -37,7 +37,7 @@ Setup picks the channel's method with the user. Use the matching line at the end
 | --- | --- |
 | Email | "Reply to this email with changes, e.g. `done 2, snooze 4 to Fri, mute newsletters`." |
 | Slack / Teams DM | "Reply in thread, or react: ✅ done · 💤 snooze to tomorrow · 👎 not useful." |
-| Claude artifact | Render a small form: a text box per item plus one "anything else?" box. See "Saving artifact feedback" below. |
+| Claude artifact | Render a small form: one text box per Needs you item plus one "Anything else?" box; no boxes for Waiting on others, Coming up or FYI. See "Saving artifact feedback" below. |
 | In-app / chat | "Reply here with changes, e.g. `done 2, snooze 4 to Fri`." |
 
 Build the example in the line from this delivery. Use item numbers that actually appear in it, and offer only actions that apply now. If there is one open item, the example uses `1`. Don't offer `build 1` after it's built, or a yes to a change you didn't propose. If no item can take an action, keep the line but drop the example.

@@ -8,7 +8,7 @@ Setup recorded what this tool can do in the Profile (About me → Capabilities).
 
 1. **Fresh-context sub-agents (strongest).** Start a sub-agent that has *not* seen your draft reasoning. Give it only: the item's source ID and link, the claim being made ("thread is waiting on the user's reply", "meeting at 2pm with A, B, C", "proposal due Friday"), the user's identity, and the rules below. Batch items from the same source into one checker to save time. Then start a second fresh sub-agent for the relevance pass in the run loop.
 2. **A separate re-check pass.** If sub-agents aren't available, finish drafting first, then start a clearly separate step: treat every draft item as unverified, re-open each source, and re-derive the claim from what the source says now — not from your draft's summary.
-3. **Source re-read with links.** If even re-opening sources isn't possible (for example, the user pasted data in), keep only items whose claim is directly visible in the pasted data, and show the link or quote location for each. Add one neutral line to Checked naming the approved sources that weren't in the paste: "Not checked: <sources not in the paste>".
+3. **Source re-read with links.** If even re-opening sources isn't possible (for example, the user pasted data in), keep only items whose claim is directly visible in the pasted data, and show the link or quote location for each. Add one neutral line to Checked naming the approved sources that weren't in the paste: "Not read directly: <every approved source>, marking the ones covered by the paste ("Outlook, Calendar (used your paste), Teams")".
 
 Never describe the method in the delivery and never compare it with other tools. Just deliver checked items.
 

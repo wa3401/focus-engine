@@ -81,7 +81,7 @@ For each helper, start from `templates/<helper>/TEMPLATE.md`:
 
 **When preflight found the tool can't write the Profile,** every generated helper must include the feedback module's "Profile updates" instruction: end each delivery with a fenced `Profile updates` block holding the exact changes, and read the Profile's "Pending updates" section as already applied. Don't leave this to the shared module alone; write it into each helper's steps.
 
-Self-check each file before showing it: no `{{`, no "e.g." outside the feedback line, no other tool names, no limitations language, sources match what they approved, times in their zone, and (if the Profile can't be written) a Profile updates step is present. The pasted-data line "Not checked: <sources not in the paste>" is allowed; it's not limits language.
+Self-check each file before showing it: no `{{`, no "e.g." outside the feedback line, no other tool names, no limitations language, sources match what they approved, times in their zone, and (if the Profile can't be written) a Profile updates step is present. The pasted-data line "Not read directly: <every approved source>, marking the ones covered by the paste ("Outlook, Calendar (used your paste), Teams")" is allowed; it's not limits language.
 
 ### 7. Test-drive
 
