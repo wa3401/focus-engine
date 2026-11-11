@@ -91,7 +91,7 @@ Run each helper once, now, on their real data (or pasted data). A test-drive is 
 
 Follow `reference/install/<tool>.md`. Prefer the lowest-effort path that works: usually the full helper instruction inside a scheduled task — nothing else to install. Offer a skill, project or agent only if it adds real value (never custom GPTs or Gems, which are being retired) (e.g. on-demand "prep my 2pm"), with click-by-click steps. If the tool can't schedule, give them a saved prompt plus a calendar reminder. Preflight already told them why; don't say it again.
 
-Confirm each schedule exists (list them back with times in their zone).
+Confirm each schedule exists (list them back with times in their zone). With no scheduling, describe times as reminders the user acts on ("Your first reminder is Mon 6:45 am"), never as runs that happen on their own, and fill each helper's **Runs:** line as "<time>, <days> (you start it; reminder at that time)".
 
 ### 9. Handover card
 
