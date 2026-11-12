@@ -6,11 +6,11 @@
   </picture>
 </a>
 
-# Fewer prompts. More focus.
+One setup prompt that builds you an AI chief of staff: helpers that bring you what needs your attention, checked and short, so you stop typing "catch me up on everything" every morning.
 
-focus-engine is one setup prompt that builds your AI a set of helpers: a morning brief, meeting prep, an end-of-day shutdown and a busywork audit. They run on your schedule inside the AI tool you already use, read only what you connect, check every item against its source, and bring you only what needs you.
+The helpers are a morning brief, meeting prep, an end-of-day shutdown and a busywork audit. They run on your schedule inside the AI tool you already use, read only what you connect, and check every item against its source.
 
-You run it once. It checks what your AI tool and plan can do, interviews you (starting from what it already knows about you), writes the helpers you choose, test-drives them on your real data, and schedules them. After that you stop typing "catch me up on everything" every morning.
+You run it once. It checks what your AI tool and plan can do, interviews you (starting from what it already knows about you), writes the helpers you choose, test-drives them on your real data, and schedules them.
 
 Status: v0.1 beta. Free and open source (MIT).
 
@@ -36,10 +36,10 @@ Up to four helpers. You pick which ones run, when, and where they show up.
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="docs/images/helpers-day-dark.png">
   <source media="(prefers-color-scheme: light)" srcset="docs/images/helpers-day-light.png">
-  <img src="docs/images/helpers-day-light.png" width="800" alt="A day with focus-engine. 7:30 am, morning brief from my-smart-assistant: what needs you today. Before meetings, a prep card from prep-my-meetings: who, your goal, three questions. 5:00 pm, shutdown from shut-down-my-day: done, new commitments, top three. Every other Friday, busywork audit from hand-off-my-busywork: what to hand off next. Times are examples; you pick your own during setup.">
+  <img src="docs/images/helpers-day-light.png" width="800" alt="A day with focus-engine. 7:30 am, morning brief from my-smart-assistant: what needs you today. Before meetings, meeting prep from prep-my-meetings: who, your goal, three questions. 5:00 pm, shutdown from shut-down-my-day: done, new commitments, top three. Every other Friday, busywork audit from hand-off-my-busywork: what to hand off next. Times are examples; you pick your own during setup.">
 </picture>
 
-Every generated helper names your real sources, people, priorities, channel and times. Nothing generic ships: no placeholders, no sample text left behind.
+Every generated helper names your real sources, people, priorities, channel and times, with no placeholders or sample text left in.
 
 ## How it works
 
@@ -77,7 +77,7 @@ Each helper follows one shared run loop ([`templates/_shared/run-loop.md`](templ
 6. **Keep only what matters.** Actionable, relevant, accurate, not muted. Then the helper's item cap, most urgent first.
 7. **Deliver and write back.** To where you want it, then updates your Profile and moves each source's "read up to here" mark.
 
-**Verify** is the step that makes the rest worth reading. A stale item ("reply to Sam" when you already did) costs more trust than ten missed FYIs, so nothing reaches you without a check against the live source. Setup picks the strongest method your tool supports ([`templates/_shared/verification.md`](templates/_shared/verification.md)):
+**Verify** matters most. A stale item ("reply to Sam" when you already did) costs more trust than ten missed FYIs, so nothing reaches you without a check against the live source. Setup picks the strongest method your tool supports ([`templates/_shared/verification.md`](templates/_shared/verification.md)):
 
 - **Fresh-context checker.** A separate sub-agent that hasn't seen the draft gets only the item's source link and the claim ("waiting on your reply", "meeting at 2pm with A, B, C") and decides keep, drop or couldn't confirm. A second fresh context does the relevance pass, so the drafter never grades its own work.
 - **Separate re-check pass.** If sub-agents aren't available, the helper finishes drafting, then treats every item as unverified, re-opens each source and re-derives the claim from what the source says now.
@@ -205,9 +205,6 @@ Say it in the same tool. "Move my brief to 8" or "add meeting prep" changes thin
 
 **How do I give feedback?**
 Reply in one line, like `done 2, snooze 4 to Fri`. The next run applies it.
-
-**Something broke?**
-Ask in [Discussions](https://github.com/wa3401/focus-engine/discussions) or open an [issue](https://github.com/wa3401/focus-engine/issues/new/choose). Never paste real emails.
 
 ## Help
 
