@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>focus-engine · Assistant Profile hub</title>
+<script src="theme.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="brand.css">
+<style>
+  .frame { padding: 48px 56px 44px; display: grid; grid-template-columns: 724px 1fr; column-gap: 0; }
+  .hub { padding-right: 44px; border-right: 1.5px solid var(--hair); }
+  .grid { display: grid; grid-template-columns: 1fr 1fr; column-gap: 28px; row-gap: 64px; }
+  .helper { padding: 18px 20px 20px; }
+  .helper .slug { font-size: 22px; color: var(--muted); }
+  .helper b { display: block; font-size: 29px; font-weight: 700; letter-spacing: -0.02em; margin-top: 4px; }
+  .profile { grid-column: 1 / -1; justify-self: center; width: 480px; padding: 26px 30px 28px; text-align: center; }
+  .profile b { display: block; font-size: 40px; font-weight: 800; letter-spacing: -0.03em; line-height: 1.05; }
+  .profile span { display: block; font-size: 27px; margin-top: 6px; }
+  .caption { margin-top: 34px; font-size: 27px; font-weight: 600; color: var(--ink-2); letter-spacing: -0.01em; }
+  .side { padding-left: 40px; align-self: center; }
+  .side ul { list-style: none; padding: 0; margin-top: 14px; }
+  .side li { white-space: nowrap; font-size: 26px; padding: 14px 0; border-top: 1.5px dashed var(--hair); line-height: 1.2; }
+  .side li:first-child { border-top: 1.5px solid var(--line); }
+</style>
+</head>
+<body>
+  <div class="frame grain">
+    <div class="hub">
+      <div class="grid">
+        <div class="box helper" id="h1"><span class="slug">my-smart-assistant</span><b>Morning brief</b></div>
+        <div class="box helper" id="h2"><span class="slug">prep-my-meetings</span><b>Meeting prep</b></div>
+        <div class="box focal profile" id="p"><b>Assistant Profile</b><span>a doc you own</span></div>
+        <div class="box helper" id="h3"><span class="slug">shut-down-my-day</span><b>Shutdown</b></div>
+        <div class="box helper" id="h4"><span class="slug">hand-off-my-busywork</span><b>Busywork audit</b></div>
+      </div>
+      <p class="caption">Every helper reads it. Every run writes back.</p>
+    </div>
+    <div class="side">
+      <p class="label">What's in it</p>
+      <ul>
+        <li>Priorities</li>
+        <li>People</li>
+        <li>Noise rules</li>
+        <li>Done / snoozed / dismissed</li>
+        <li>Your feedback</li>
+      </ul>
+    </div>
+    <svg class="wires"></svg>
+  </div>
+  <script>
+    // Two-way hairlines: each helper reads the Profile and writes back to it.
+    window.layoutWires = ({ r, path }) => {
+      const p = r("#p");
+      for (const id of ["#h1", "#h2"]) { const h = r(id); path([[h.cx, h.b], [h.cx, p.t]], { arrow: true, arrowStart: true }); }
+      for (const id of ["#h3", "#h4"]) { const h = r(id); path([[h.cx, p.b], [h.cx, h.t]], { arrow: true, arrowStart: true }); }
+    };
+  </script>
+  <script src="wires.js"></script>
+</body>
+</html>

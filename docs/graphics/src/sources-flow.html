@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>focus-engine · Sources to delivery</title>
+<script src="theme.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="brand.css">
+<style>
+  .frame { padding: 40px 56px 48px; display: grid; grid-template-columns: 318px 1fr 320px 1fr 296px; align-items: center; }
+  .col { display: flex; flex-direction: column; gap: 10px; }
+  .col .label { margin-bottom: 6px; }
+  .src { font-size: 25px; font-weight: 500; padding: 12px 18px; line-height: 1.2; }
+  .src.more { white-space: nowrap; background: transparent; border: 1.5px dashed var(--muted); color: var(--muted); }
+  .dst { font-size: 25px; font-weight: 500; padding: 16px 18px; line-height: 1.2; }
+  .ai { grid-column: 3; padding: 30px 28px 30px; }
+  .ai b { display: block; font-size: 38px; font-weight: 800; letter-spacing: -0.03em; line-height: 1.05; }
+  .ai .who { font-size: 25px; margin-top: 12px; line-height: 1.3; }
+  .ai .how { font-size: 25px; line-height: 1.3; margin-top: 18px; padding-top: 18px; border-top: 1.5px solid color-mix(in srgb, var(--bone) 45%, transparent); }
+  .reads { grid-column: 1; } .delivers { grid-column: 5; }
+</style>
+</head>
+<body>
+  <div class="frame grain">
+    <div class="col reads">
+      <p class="label">Reads</p>
+      <div class="box src">Email</div>
+      <div class="box src">Calendar</div>
+      <div class="box src">Slack or Teams</div>
+      <div class="box src">Docs and drive</div>
+      <div class="box src">Past AI chats</div>
+      <div class="box src">CRM (optional)</div>
+      <div class="box src more">+ whatever you connect</div>
+    </div>
+    <div class="box focal ai" id="ai">
+      <b>Your AI tool</b>
+      <p class="who">Claude, ChatGPT, Gemini or&nbsp;Copilot</p>
+      <p class="how">runs your helpers on&nbsp;your&nbsp;schedule</p>
+    </div>
+    <div class="col delivers">
+      <p class="label">Delivers to</p>
+      <div class="box dst">Chat in your AI tool</div>
+      <div class="box dst">Slack DM</div>
+      <div class="box dst">Email</div>
+    </div>
+    <svg class="wires"></svg>
+  </div>
+  <script>
+    // Sources join one bus into the AI tool; a second bus fans out to each destination.
+    window.layoutWires = ({ r, path }) => {
+      const ai = r("#ai");
+      const srcs = [...document.querySelectorAll(".src")].map((e) => [r(e), e.classList.contains("more")]);
+      const bx = (srcs[0][0].r + ai.l) / 2;
+      for (const [s, more] of srcs) path([[s.r, s.cy], [bx, s.cy]], more ? { dash: "6 6" } : {});
+      const n = srcs.length;
+      path([[bx, srcs[0][0].cy], [bx, srcs[n - 2][0].cy]]);
+      path([[bx, srcs[n - 2][0].cy], [bx, srcs[n - 1][0].cy]], { dash: "6 6" });
+      path([[bx, ai.cy], [ai.l, ai.cy]], { arrow: true });
+
+      const dsts = [...document.querySelectorAll(".dst")].map((e) => r(e));
+      const dx = (ai.r + dsts[0].l) / 2;
+      path([[ai.r, ai.cy], [dx, ai.cy]]);
+      path([[dx, dsts[0].cy], [dx, dsts[dsts.length - 1].cy]]);
+      for (const d of dsts) path([[dx, d.cy], [d.l, d.cy]], { arrow: true });
+    };
+  </script>
+  <script src="wires.js"></script>
+</body>
+</html>

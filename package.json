@@ -7,6 +7,7 @@
   "type": "module",
   "scripts": {
     "build": "node scripts/build-prompt.mjs",
-    "evals:bundle": "node scripts/bundle-evals.mjs"
+    "evals:bundle": "node scripts/bundle-evals.mjs",
+    "graphics": "node docs/graphics/render.mjs"
   }
 }
