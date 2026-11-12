@@ -16,7 +16,7 @@ evals/                      test cases, fixtures, seeded Profiles, runner and sm
 research/                   platform facts behind the install guides, with sources
 scripts/build-prompt.mjs    builds dist/PROMPT.md and the skill folder
 scripts/bundle-evals.mjs    packs eval cases for tools without a file system
-docs/graphics/              HTML sources and renderer for the README and site images
+docs/graphics/              renderer for the README images (screenshots of the site's diagrams)
 docs/images/                rendered images, light and dark
 ```
 
@@ -28,12 +28,22 @@ Needs Node 18 or newer.
 
 ```
 npm run build      # dist/PROMPT.md (the copy-paste setup prompt) and dist/build-my-focus-engine/ (the Claude skill folder)
-npm run graphics   # re-renders docs/images/*.png from docs/graphics/src/, light and dark, at 2x
+npm run graphics   # re-renders docs/images/*.png from the site's diagrams, light and dark, at 2x
 ```
 
 There is one source of truth: edit the files in `build-my-focus-engine/`, `templates/` and `profile-template.md`, never `dist/`. The build replaces `1.0.0-dev` with the version in `package.json`.
 
-`npm run graphics` uses Playwright (Chromium) and Python with Pillow to shrink the PNGs. Run it after changing anything in `docs/graphics/src/`, and commit the PNGs.
+### README images
+
+The diagrams live in the website repo ([wa3401/consulting](https://github.com/wa3401/consulting)), as Astro components in `apps/web/src/components/focus-engine/`. The same components render on [willanderson.tech/focus-engine](https://willanderson.tech/focus-engine), and the PNGs in `docs/images/` are screenshots of them, so change the component, never the PNG.
+
+To update the images:
+
+1. Change the component in the site repo and run the site: `npx astro dev`, or `npx astro build && npx astro preview`, in `apps/web` (both serve `http://localhost:4321`).
+2. Here, run `npm run graphics` (or `npm run graphics -- header profile-hub` for some of them). It opens `/focus-engine/diagrams?theme=light` and `?theme=dark`, screenshots each graphic at 2x, and stops if the Archivo or IBM Plex Mono web fonts didn't load.
+3. Look at the PNGs and commit them. File names stay the same, so the README needs no change.
+
+`SITE_URL` points it somewhere else, like `SITE_URL=https://willanderson.tech npm run graphics` once the site change is deployed. It needs Playwright (Chromium), and Python with Pillow to shrink the PNGs.
 
 The website copy at [willanderson.tech/focus-engine](https://willanderson.tech/focus-engine) serves `dist/PROMPT.md` as `focus-engine-setup.md` and a ZIP of `dist/build-my-focus-engine/` as `build-my-focus-engine.zip`. Will updates both when a change ships.
 
